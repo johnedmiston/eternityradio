@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xaml-comp compile="true" ?>
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                    xmlns:xappy="clr-namespace:EternityRadioApp;assembly=EternityRadioApp">
+
+    <Color x:Key="ColorTabIcon">Gray</Color>
+    <x:Double x:Key="SizeTabIcon">24</x:Double>
+
+    <FontImageSource x:Key="IconBack"
+                     FontFamily="FontAwesome"
+                     Glyph="{OnPlatform Android={x:Static xappy:IconFont.ArrowLeft},
+                                iOS={x:Static xappy:IconFont.ChevronLeft}}"
+                     Size="{StaticResource SizeTabIcon}"
+                     Color="{StaticResource ColorTabIcon}" />
+
+    <FontImageSource x:Key="IconTabNews"
+                     FontFamily="FontAwesome"
+                     Glyph="{x:Static xappy:IconFont.Newspaper}"
+                     Size="{StaticResource SizeTabIcon}"
+                     Color="{StaticResource ColorTabIcon}" />
+
+    <FontImageSource x:Key="IconTabControls"
+                     FontFamily="FontAwesome"
+                     Glyph="{x:Static xappy:IconFont.Gears}"
+                     Size="{StaticResource SizeTabIcon}"
+                     Color="{StaticResource ColorTabIcon}" />
+
+    <FontImageSource x:Key="IconTabScenarios"
+                     FontFamily="FontAwesome"
+                     Glyph="{x:Static xappy:IconFont.Scroll}"
+                     Size="{StaticResource SizeTabIcon}"
+                     Color="{StaticResource ColorTabIcon}" />
+
+    <FontImageSource x:Key="IconTabResources"
+                     FontFamily="FontAwesome"
+                     Glyph="{x:Static xappy:IconFont.Book}"
+                     Size="{StaticResource SizeTabIcon}"
+                     Color="{StaticResource ColorTabIcon}" />
+
+    <FontImageSource x:Key="IconTabAbout"
+                     FontFamily="FontAwesome"
+                     Glyph="{x:Static xappy:IconFont.Info}"
+                     Size="{StaticResource SizeTabIcon}"
+                     Color="{StaticResource ColorTabIcon}" />
+
+</ResourceDictionary>

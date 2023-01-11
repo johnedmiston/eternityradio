@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:pv="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView" 
+             xmlns:vm="clr-namespace:EternityRadioApp.ViewModel"
+             mc:Ignorable="d" NavigationPage.HasNavigationBar="True"
+             Title="Eternity Radio"
+             x:Class="EternityRadioApp.MainPage">
+             
+    <ContentPage.BindingContext>
+        <vm:MainViewModel/>
+    </ContentPage.BindingContext>
+
+   
+    <pv:PancakeView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <pv:PancakeView.Shadow>
+            <pv:DropShadow Color="#000000" Offset="10,10" />
+        </pv:PancakeView.Shadow>
+        <pv:PancakeView.BackgroundGradientStops>
+            <pv:GradientStopCollection>
+                <pv:GradientStop Color="#E7EDF8" Offset="0" />
+                <pv:GradientStop Color="#E3E7EE" Offset="1" />
+            </pv:GradientStopCollection>
+        </pv:PancakeView.BackgroundGradientStops>
+        <Grid  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+
+            
+            
+
+            <CollectionView x:Name="CategoryContent" BackgroundColor="Transparent" ItemsSource="{Binding MenuList}" HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand"
+                            SelectionMode="Single" SelectionChanged="MenuContent_SelectionChanged"  SelectedItem="{Binding SelectedMenu}">
+
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Vertical" ItemSpacing="30"/>
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid  Margin="10,0,0,10" HorizontalOptions="FillAndExpand"  VerticalOptions="End">
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup Name="CommonStates">
+                                    <VisualState Name="Normal" />
+                                    <VisualState Name="Selected">
+                                        <VisualState.Setters>
+                                            <Setter Property="BackgroundColor" Value="Transparent" />
+                                        </VisualState.Setters>
+                                    </VisualState>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                               
+                            </Grid.ColumnDefinitions>
+
+
+
+                            <Frame IsClippedToBounds="True"
+                    HasShadow="True"
+                    Padding="0"
+                    BackgroundColor="White" >           
+                                <Frame.Margin>
+                                    <OnPlatform x:TypeArguments="Thickness"
+                            Android="10"
+                            iOS="10"/>      
+                                </Frame.Margin>
+
+                                <StackLayout HorizontalOptions="FillAndExpand" Orientation="Vertical">
+                                    <Image Source="{Binding ImageSource}" Aspect="Fill" HeightRequest="250" />
+                                    <StackLayout HorizontalOptions="FillAndExpand" Orientation="Vertical" Padding="15">
+                                        <Label TextColor="#222" FontSize = "25" Text="{Binding Name}"/>
+                                        <Label Text="{Binding Summary}" FontSize = "16"/>
+                                        <!--<Button Margin="0,25,0,0" Text="BUTTON" TextColor="White" BackgroundColor="#0097e6"/>-->
+                                    </StackLayout>
+
+                                </StackLayout>
+                            </Frame>
+                          <!--  <StackLayout BackgroundColor="#F7F9FC" VerticalOptions="Center" Margin="0,0,0,0">
+                                <Image Margin="0,0,0,0" WidthRequest="800" HeightRequest="600" VerticalOptions="Center" 
+                                       Source="{Binding ImageSource}" />
+
+
+
+                                <Label Margin="20,0" Text="{Binding Title}" TextColor="Black" FontSize="24"/>
+                                <Label Margin="20,0" Padding="0,0,0,20" Text="{Binding Artist}" TextColor="Black" FontSize="16" Opacity="0.5"/>
+
+                            </StackLayout>-->
+                  
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Grid>
+    </pv:PancakeView>
+
+</ContentPage>

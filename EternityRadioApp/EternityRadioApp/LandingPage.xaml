@@ -1,0 +1,374 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:EternityRadioApp"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:this="clr-namespace:EternityRadioApp.ViewModel"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    xmlns:anim="clr-namespace:Xamanimation;assembly=Xamanimation" 
+    xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+    ios:Page.UseSafeArea="False"
+    mc:Ignorable="d"
+    BackgroundColor="#f1f1f1"
+    Shell.TabBarIsVisible="false"
+    Shell.NavBarIsVisible="false"
+    Shell.BackgroundColor="white"
+    Shell.ForegroundColor="{StaticResource ThemePrimary}"
+    x:Class="EternityRadioApp.LandingPage">
+
+    <ContentPage.BindingContext>
+        <this:LandingPageViewModel />
+    </ContentPage.BindingContext>
+
+    <ContentPage.Resources>
+        <StyleSheet>
+            <![CDATA[
+              .btn {
+                height: 44;
+                font-size: 16;
+              }
+            
+              ^ImageButton {
+                background-color: transparent;
+              }
+            
+              ]]>
+        </StyleSheet>
+
+        <!-- ANIMATIONS -->
+        <anim:FadeToAnimation x:Key="FakeNavBarFadeOut" Target="{x:Reference FakeNavBar}" Opacity="0" Duration="500"/>
+        <anim:FadeToAnimation x:Key="FakeNavBarFadeIn" Target="{x:Reference FakeNavBar}" Opacity="1" Duration="500" />
+    </ContentPage.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="88"/>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid Grid.RowSpan="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="360" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <!-- HEADER BACKGROUND -->
+            <BoxView 
+                BackgroundColor="White" HorizontalOptions="Fill"
+                TranslationY="{Binding RelativeScrollY, 
+                                Source={x:Reference Scroll}, 
+                                Converter={StaticResource ScrollValueConverter}, 
+                                ConverterParameter='0;0;200;false;0'}"
+                />
+            <!-- HEADER CAROUSEL -->
+            <Image Aspect="AspectFill"   Source="landing_page.png">
+                <Image.Behaviors>
+                    <anim:AnimateProgressDouble 
+                        TargetProperty="VisualElement.Opacity"
+                        Progress="{Binding ScrollY, Source={x:Reference Scroll}}"
+                        Minimum="0"
+                        Maximum="180"
+                        From="1"
+                        To="0"/>
+                </Image.Behaviors>
+            </Image>
+
+            <RefreshView
+                RefreshColor="#FF9900"
+                Grid.RowSpan="2"
+                IsRefreshing="{Binding IsBusy, Mode=TwoWay}"
+                Command="{Binding RefreshCommand}">
+                <ScrollView>
+                    <ScrollView.Behaviors>
+                        <anim:ScrollViewScrollBehavior x:Name="Scroll" />
+                    </ScrollView.Behaviors>
+                    
+                    <StackLayout
+                        Margin="0,330,0,0"
+                        >
+                             <!-- FIRST SECTION -->
+                        <Frame 
+                            Visual="Material"
+                            d:IsVisible="False">
+                            <Frame.Behaviors>
+                                <anim:AnimateProgressDouble 
+                                    TargetProperty="VisualElement.Scale"
+                                    Progress="{Binding ScrollY, Source={x:Reference Scroll}}"
+                                    From="1"
+                                    To="0.75"
+                                    Minimum="320"
+                                    Maximum="400"/>
+                                <anim:AnimateProgressDouble 
+                                    TargetProperty="VisualElement.Opacity"
+                                    Progress="{Binding ScrollY, Source={x:Reference Scroll}}"
+                                    From="1"
+                                    To="0.9"
+                                    Minimum="0"
+                                    Maximum="320"/>
+                                <anim:AnimateProgressDouble 
+                                    TargetProperty="VisualElement.Opacity"
+                                    Progress="{Binding ScrollY, Source={x:Reference Scroll}}"
+                                    From="0.9"
+                                    To="0"
+                                    Minimum="320"
+                                    Maximum="400"/>
+                            </Frame.Behaviors>
+
+                            <StackLayout>
+                            <Label FontSize="Title" Text="Recent Media"></Label>
+
+                            <ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never" >
+                                <StackLayout 
+                              
+                                xct:StateLayout.CurrentState="{Binding MainState}"
+                                xct:StateLayout.AnimateStateChanges="True">
+                                    <xct:StateLayout.StateViews>
+                                        <xct:StateView StateKey="Loading">
+                                            <StackLayout Orientation="Horizontal"
+                                             x:Name="Loader">
+                                                <StackLayout.Resources>
+                                                    <anim:StoryBoard x:Key="LoadingBoard" Target="{x:Reference Loader}">
+                                                        <anim:FadeToAnimation Opacity="0.5" Duration="500"/>
+                                                        <anim:FadeToAnimation Opacity="1" Duration="500"/>
+                                                        <anim:FadeToAnimation Opacity="0.5" Duration="500"/>
+                                                        <anim:FadeToAnimation Opacity="1" Duration="500"/>
+                                                        <anim:FadeToAnimation Opacity="0.5" Duration="500"/>
+                                                        <anim:FadeToAnimation Opacity="1" Duration="500"/>
+                                                    </anim:StoryBoard>
+                                                </StackLayout.Resources>
+                                                <StackLayout.Behaviors>
+                                                    <anim:EntranceTransition
+	                                                Duration="1500"/>
+                                                </StackLayout.Behaviors>
+                                                <StackLayout.Triggers>
+                                                    <DataTrigger
+                                                    TargetType="StackLayout"
+                                                     Binding="{Binding IsBusy}"
+                                                     Value="true">
+                                                        <DataTrigger.EnterActions>
+                                                            <anim:BeginAnimation
+                                                        Animation="{StaticResource LoadingBoard}" />
+                                                        </DataTrigger.EnterActions>
+                                                    </DataTrigger>
+                                                </StackLayout.Triggers>
+
+                                                    <StackLayout>
+                                                        <BoxView  HeightRequest="150" WidthRequest="150" BackgroundColor="#CCCCCC" HorizontalOptions="Fill"/>
+                                                        <BoxView HeightRequest="30" WidthRequest="100" BackgroundColor="#CCCCCC" HorizontalOptions="Fill"/>
+
+                                                        <BoxView HeightRequest="30" WidthRequest="150" BackgroundColor="#CCCCCC" HorizontalOptions="Fill"/>
+
+                                                    </StackLayout>
+                                                    <StackLayout>
+                                                        <BoxView  HeightRequest="150" WidthRequest="150" BackgroundColor="#CCCCCC" HorizontalOptions="Fill"/>
+                                                        <BoxView HeightRequest="30" WidthRequest="100" BackgroundColor="#CCCCCC" HorizontalOptions="Fill"/>
+
+                                                        <BoxView HeightRequest="30" WidthRequest="150" BackgroundColor="#CCCCCC" HorizontalOptions="Fill"/>
+
+                                                    </StackLayout>
+                                                    <StackLayout>
+                                                        <BoxView  HeightRequest="150" WidthRequest="150" BackgroundColor="#CCCCCC" HorizontalOptions="Fill"/>
+                                                        <BoxView HeightRequest="30" WidthRequest="100" BackgroundColor="#CCCCCC" HorizontalOptions="Fill"/>
+
+                                                        <BoxView HeightRequest="30" WidthRequest="150" BackgroundColor="#CCCCCC" HorizontalOptions="Fill"/>
+
+                                                    </StackLayout>
+                                                  
+                                            </StackLayout>
+                                        </xct:StateView>
+                                    </xct:StateLayout.StateViews>
+
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" BindableLayout.ItemsSource="{Binding RecentContent}">
+                                           
+                                            <BindableLayout.ItemTemplate>
+                                            
+                                            <DataTemplate>
+
+                                                <StackLayout WidthRequest="150">
+                                                        <StackLayout.GestureRecognizers>
+                                                            <TapGestureRecognizer Command="{Binding RecentCommand}"/>
+                                                        </StackLayout.GestureRecognizers>
+
+                                                        <Image Source="{Binding ImageSource}" WidthRequest="150" HeightRequest="150" Aspect="AspectFill"  />
+                                                  
+                                                    <Label Text="{Binding Name}" FontSize="16" FontAttributes="Bold" />
+                                                    <Label Text="{Binding Series}" FontSize="16" />
+                                                </StackLayout>
+                                            </DataTemplate>
+                                        </BindableLayout.ItemTemplate>
+                                    </StackLayout>
+
+                                </StackLayout>
+                            </ScrollView>
+                        </StackLayout>
+                        </Frame>
+                        <!-- SECOND SECTION -->
+
+                        <StackLayout Orientation="Vertical"
+                            VerticalOptions="Start"
+                            HorizontalOptions="Center"
+                                     BackgroundColor="#f1f1f1"
+                            BindableLayout.ItemsSource="{Binding MenuList}">
+
+                            <BindableLayout.ItemTemplate>
+                                <DataTemplate>
+
+
+
+                                    <Frame
+                                            
+                                            Margin="0,10"
+                                            Visual="Material"
+                                            d:IsVisible="false">
+
+                                        <StackLayout
+                                                xct:StateLayout.CurrentState="{Binding MainState}"
+                                                xct:StateLayout.AnimateStateChanges="True">
+                                            <xct:StateLayout.StateViews>
+                                                <xct:StateView StateKey="Loading">
+                                                    <StackLayout x:Name="DetailsLoader">
+                                                        <StackLayout.Resources>
+                                                            <anim:StoryBoard x:Key="LoadingDetails" Target="{x:Reference DetailsLoader}">
+                                                                <anim:FadeToAnimation Opacity="0.5" Duration="500"/>
+                                                                <anim:FadeToAnimation Opacity="1" Duration="500"/>
+                                                                <anim:FadeToAnimation Opacity="0.5" Duration="500"/>
+                                                                <anim:FadeToAnimation Opacity="1" Duration="500"/>
+                                                                <anim:FadeToAnimation Opacity="0.5" Duration="500"/>
+                                                                <anim:FadeToAnimation Opacity="1" Duration="500"/>
+                                                            </anim:StoryBoard>
+                                                        </StackLayout.Resources>
+                                                        <StackLayout.Triggers>
+                                                            <DataTrigger 
+                                                                    TargetType="StackLayout"
+                                                                     Binding="{Binding IsBusy}"
+                                                                     Value="true">
+                                                                <DataTrigger.EnterActions>
+                                                                    <anim:BeginAnimation
+                                                                        Animation="{StaticResource LoadingDetails}" />
+                                                                </DataTrigger.EnterActions>
+
+                                                            </DataTrigger>
+                                                        </StackLayout.Triggers>
+                                                        <BoxView 
+                                                                BackgroundColor="#CCCCCC" HeightRequest="20" HorizontalOptions="Fill" />
+                                                        <BoxView 
+                                                                HeightRequest="1"
+                                                                BackgroundColor="#f1f1f1" />
+                                                        <BoxView 
+                                                                HeightRequest="20" BackgroundColor="#CCCCCC" HorizontalOptions="Fill"/>
+                                                        <BoxView 
+                                                                HeightRequest="1"
+                                                                BackgroundColor="#f1f1f1" />
+                                                        <Button 
+                                                                Text="Read More" IsEnabled="False"
+                                                                FontSize="18"
+                                                                TextColor="#FF9900"
+                                                                Visual="Default"
+                                                                BackgroundColor="transparent" />
+                                                    </StackLayout>
+
+                                                </xct:StateView>
+                                            </xct:StateLayout.StateViews>
+
+
+                                            <StackLayout.GestureRecognizers>
+                                                <TapGestureRecognizer Command="{Binding ChooseCommand}"/>
+                                            </StackLayout.GestureRecognizers>
+                                            <Image Source="{Binding ImageSource}" Aspect="AspectFill" HeightRequest="250"/>
+                                            <Label 
+                                                    HorizontalTextAlignment="Start"
+                                                    TextColor="#222"  FontSize="25"
+                                                    
+                                                    Text="{Binding Name}" />
+                                            <BoxView
+                                                    HeightRequest="1"
+                                                    BackgroundColor="#f1f1f1" />
+                                            <Label
+                                                    Text="{Binding Summary}"
+                                                    FontSize="18"
+                                              
+                                                    LineHeight="1.2" />
+                                            <Label Text="{Binding Author}" Margin="0,10"  FontAttributes="Bold" FontSize="16" />
+                                            
+                                              
+                                            
+                                               
+                                        </StackLayout>
+                                    </Frame>
+                                </DataTemplate>
+                            </BindableLayout.ItemTemplate>
+                        </StackLayout>
+                        <Label Text="{Binding XmlVersion}" HorizontalTextAlignment="Center" FontSize="Micro"></Label>
+                    </StackLayout>
+                   
+                </ScrollView>
+            </RefreshView>
+        </Grid>
+        
+       
+        <FlexLayout
+            Direction="Row"
+            Padding="15,42,15,15">
+    
+            <BoxView FlexLayout.Grow="1" />
+
+           
+        </FlexLayout>
+       
+        <!-- FAKE NAVIGATIONBAR -->
+        <FlexLayout 
+            x:Name="FakeNavBar"
+            BackgroundColor="{StaticResource ThemePrimary}"
+            Direction="Row"
+            Opacity="0"
+            Padding="15,42,15,15">
+            <FlexLayout.Triggers>
+                <DataTrigger TargetType="FlexLayout"
+                                Binding="{Binding ScrollY, 
+                                        Source={x:Reference Scroll}, 
+                                        Converter={StaticResource ComparisonConverter},
+                                        ConverterParameter='180;>'}"
+                                Value="true">
+                    <DataTrigger.EnterActions>
+                        <anim:BeginAnimation
+                                    Animation="{StaticResource FakeNavBarFadeIn}" />
+                    </DataTrigger.EnterActions>
+                    <DataTrigger.ExitActions>
+                        <anim:BeginAnimation
+                                    Animation="{StaticResource FakeNavBarFadeOut}" />
+                    </DataTrigger.ExitActions>
+                </DataTrigger>
+            </FlexLayout.Triggers>
+
+            <Label FontSize="Title" Margin="10,0" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center"
+                     TextColor="White" LineBreakMode="TailTruncation" FlexLayout.AlignSelf="Center" FlexLayout.Grow="1"  >
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span FontSize="Title" FontFamily="FontAwesome" Text="{Binding Source={x:Static local:IconFont.Microphone }}"/>
+                        <Span Text=" Eternity Radio"></Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+           
+        </FlexLayout>
+
+
+ 
+        <!-- DEBUG INFO -->
+        <!--
+        <StackLayout
+            HorizontalOptions="End"
+            VerticalOptions="Start"
+            BackgroundColor="Black">
+            <Label
+                FontSize="8"
+                TextColor="White"
+                Text="{Binding ScrollY, Source={x:Reference Scroll}, StringFormat='{0:F2}'}"/>
+            <Label 
+                FontSize="8"
+                TextColor="White"
+                Text="{Binding PercentageScrollY, Source={x:Reference Scroll},  StringFormat='{0:F2}%'}"/>
+        </StackLayout>
+        -->
+    </Grid>
+</ContentPage>

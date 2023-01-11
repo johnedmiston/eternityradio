@@ -1,0 +1,613 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<content>
+  <update version="1.1" date="2022-11-14"></update>
+  <streams>
+    <!-- RADIO CONTENT -->
+    <media Name="ISOM Training" Author="Sunda Language" Url="https://cybermissions.org:8443/stream.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="1" Summary="MP3 training files from the International School of Missions, in both English and Sunda. Speakers include Jack Hayford, Dr. Reinhard Bonnke and Bayless Conley."></media>
+    <media Name="English Radio Programs" Author="John Edmiston" Url="https://cybermissions.org:8443/stream2.mp3" CoverImage="EternityRadioApp.Images.EnglishRadio.jpg" Sequence="2" Summary="Various English language programs, mainly verse-by-verse teaching by John Edmiston and other pastors."></media>
+    <media Name="Harvestime Audio" Author="Vince Rizzo" Url="https://cybermissions.org:8443/stream3.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="3" Summary="Dr. Vince Rizzo reads the Harvestime manuals which are very practical training in evangelism and church-planting along with basic Bible-teaching."></media>
+  </streams>
+  <download>
+    <!-- UPLIFTING MOMENTS -->
+    <category Name="Uplifting Moments" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Summary="15 minute devotionals by John Edmiston" Author="John Edmiston" Sequence="1">
+      <document></document>
+      <series Name="Grace From Heaven" Author="John Edmiston" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Summary="" Sequence="1">
+        <media Name="Intro" Author="John Edmiston" Url="https://eternityradio.org/UM/assets/dgfh1.mp3" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Sequence="1" Summary=""></media>
+        <media Name="Grace" Author="John Edmiston" Url="https://eternityradio.org/UM/assets/dgfh2_grace.mp3" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Sequence="2" Summary=""></media>
+        <media Name="Kingdom of God" Author="John Edmiston" Url="https://eternityradio.org/UM/assets/dgfh3_kog.mp3" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Sequence="3" Summary=""></media>
+      </series>
+      <series Name="Romans" Author="John Edmiston" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Summary="" Sequence="2">
+        <media Name="Romans 8:1,2" Author="John Edmiston" Url="https://eternityradio.org/UM/assets/romans_8_1-2.mp3" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Sequence="1" Summary=""></media>
+        <media Name="Romans 8:3,4" Author="John Edmiston" Url="https://eternityradio.org/UM/assets/romans_8_3-4.mp3" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Sequence="2" Summary=""></media>
+        <media Name="Romans 8:5-8" Author="John Edmiston" Url="https://eternityradio.org/UM/assets/020820_rom8_5-8_ife.mp3" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Sequence="3" Summary=""></media>
+        <media Name="Romans 8:9-11" Author="John Edmiston" Url="https://eternityradio.org/UM/assets/romans_8_9-11.mp3" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Sequence="4" Summary=""></media>
+        <media Name="Romans 8:12-13" Author="John Edmiston" Url="https://eternityradio.org/UM/assets/romans_8_12-13.mp3" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Sequence="5" Summary=""></media>
+        <media Name="Romans 8:14-17" Author="John Edmiston" Url="https://eternityradio.org/UM/assets/romans_8_14-17.mp3" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Sequence="6" Summary=""></media>
+        <media Name="Romans 8:18" Author="John Edmiston" Url="https://eternityradio.org/UM/assets/romans_8_18.mp3" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Sequence="7" Summary=""></media>
+        <media Name="Romans 8:23-25" Author="John Edmiston" Url="https://eternityradio.org/UM/assets/romans_8_23-25.mp3" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Sequence="8" Summary=""></media>
+        <media Name="Romans 8:26,27" Author="John Edmiston" Url="https://eternityradio.org/UM/assets/romans_8_26-27.mp3" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Sequence="9" Summary=""></media>
+        <media Name="Romans 8:28" Author="John Edmiston" Url="https://eternityradio.org/UM/assets/romans_8_28.mp3" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Sequence="10" Summary=""></media>
+        <media Name="Romans 8:29,30" Author="John Edmiston" Url="https://eternityradio.org/UM/assets/romans_8_29-30.mp3" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Sequence="11" Summary=""></media>
+        <media Name="Romans 8:31-34" Author="John Edmiston" Url="https://eternityradio.org/UM/assets/romans_8_31-34.mp3" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Sequence="12" Summary=""></media>
+        <media Name="Romans 8:35-37" Author="John Edmiston" Url="https://eternityradio.org/UM/assets/romans_8_35-37.mp3" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Sequence="13" Summary=""></media>
+      </series>
+      <series Name="Lord's Prayer" Author="John Edmiston" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Summary="" Sequence="3">
+        <media Name="Lord's Prayer Part 1" Author="John Edmiston" Url="https://eternityradio.org/UM/assets/071319_final.mp3" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Sequence="1" Summary=""></media>
+        <media Name="Lord's Prayer Part 2" Author="John Edmiston" Url="https://eternityradio.org/UM/assets/072019_final.mp3" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Sequence="2" Summary=""></media>
+        <media Name="Lord's Prayer Part 3" Author="John Edmiston" Url="https://eternityradio.org/UM/assets/072719_final.mp3" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Sequence="3" Summary=""></media>
+        <media Name="Lord's Prayer Part 4" Author="John Edmiston" Url="https://eternityradio.org/UM/assets/080319_final.mp3" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Sequence="4" Summary=""></media>
+        <media Name="Lord's Prayer Part 5" Author="John Edmiston" Url="https://eternityradio.org/UM/assets/081019_final.mp3" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Sequence="5" Summary=""></media>
+        <media Name="Lord's Prayer Part 6" Author="John Edmiston" Url="https://eternityradio.org/UM/assets/081719_final.mp3" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Sequence="6" Summary=""></media>
+        <media Name="Lord's Prayer Part 7" Author="John Edmiston" Url="https://eternityradio.org/UM/assets/082419.mp3" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Sequence="7" Summary=""></media>
+      </series>
+      <series Name="General Teaching on Prayer and on Faith" Author="John Edmiston" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Summary="" Sequence="4">
+        <media Name="Little Faith" Author="John Edmiston" Url="https://eternityradio.org/UM/assets/060819.mp3" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Sequence="1" Summary=""></media>
+        <media Name="Great Faith" Author="John Edmiston" Url="https://eternityradio.org/UM/assets/061519.mp3" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Sequence="2" Summary=""></media>
+        <media Name="12 Laws of Faith" Author="John Edmiston" Url="https://eternityradio.org/UM/assets/060119.mp3" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Sequence="3" Summary=""></media>
+        <media Name="What Is Prayer?" Author="John Edmiston" Url="https://eternityradio.org/UM/assets/040619.mp3" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Sequence="4" Summary=""></media>
+        <media Name="Praying For The Impossible" Author="John Edmiston" Url="https://eternityradio.org/UM/assets/041319.mp3" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Sequence="5" Summary=""></media>
+        <media Name="Praying For Governments" Author="John Edmiston" Url="https://eternityradio.org/UM/assets/052519_final.mp3" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Sequence="6" Summary=""></media>
+        <media Name="Praying For The Lost" Author="John Edmiston" Url="https://eternityradio.org/UM/assets/051819_final.mp3" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Sequence="7" Summary=""></media>
+        <media Name="Praying For Love" Author="John Edmiston" Url="https://eternityradio.org/UM/assets/042019.mp3" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Sequence="8" Summary=""></media>
+        <media Name="Praying For Laborers" Author="John Edmiston" Url="https://eternityradio.org/UM/assets/062919_final.mp3" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Sequence="9" Summary=""></media>
+        <media Name="Praying For Our Daily Needs" Author="John Edmiston" Url="https://eternityradio.org/UM/assets/050419b_final.mp3" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Sequence="10" Summary=""></media>
+        <media Name="Praying For Your Heart's Desires" Author="John Edmiston" Url="https://eternityradio.org/UM/assets/062219.mp3" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Sequence="11" Summary=""></media>
+        <media Name="Praying For Those Who Persecute Us" Author="John Edmiston" Url="https://eternityradio.org/UM/assets/051119_final.mp3" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Sequence="12" Summary=""></media>
+        <media Name="How To Pray For Peace In Your Life" Author="John Edmiston" Url="https://eternityradio.org/UM/assets/042719c_final.mp3" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Sequence="13" Summary=""></media>
+      </series>
+      <series Name="Miscellaneous" Author="John Edmiston" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Summary="" Sequence="5">
+        <media Name="Isaiah 61" Author="John Edmiston" Url="https://eternityradio.org/UM/assets/isaiah_61.mp3" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Sequence="1" Summary=""></media>
+        <media Name="Abiding in Christ 1" Author="John Edmiston" Url="https://eternityradio.org/UM/assets/abide_in_christ_1.mp3" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Sequence="2" Summary=""></media>
+        <media Name="Abiding in Christ 2" Author="John Edmiston" Url="https://eternityradio.org/UM/assets/abide_in_christ_2.mp3" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Sequence="3" Summary=""></media>
+        <media Name="Focus Determines Filling" Author="John Edmiston" Url="https://eternityradio.org/UM/assets/083119.mp3" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Sequence="4" Summary=""></media>
+        <media Name="The Strong and the Weak" Author="John Edmiston" Url="https://eternityradio.org/UM/assets/090719.mp3" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Sequence="5" Summary=""></media>
+        <media Name="Three Kinds of Emotions" Author="John Edmiston" Url="https://eternityradio.org/UM/assets/091419.mp3" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Sequence="6" Summary=""></media>
+        <media Name="The Infinite Variety of Souls" Author="John Edmiston" Url="https://eternityradio.org/UM/assets/092119.mp3" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Sequence="7" Summary=""></media>
+        <media Name="The Need For Holiness" Author="John Edmiston" Url="https://eternityradio.org/UM/assets/070619_final.mp3" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Sequence="8" Summary=""></media>
+        <media Name="Bethlehem" Author="John Edmiston" Url="https://eternityradio.org/UM/assets/122819.mp3" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Sequence="9" Summary=""></media>
+        <media Name="The Prince of Peace" Author="John Edmiston" Url="https://eternityradio.org/UM/assets/122119.mp3" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Sequence="10" Summary=""></media>
+        <media Name="Genesis 1:1" Author="John Edmiston" Url="https://eternityradio.org/UM/assets/120719.mp3" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Sequence="11" Summary=""></media>
+        <media Name="Genesis 1:26-28" Author="John Edmiston" Url="https://eternityradio.org/UM/assets/121419.mp3" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Sequence="11" Summary=""></media>
+      </series>
+      <series Name="Proverbs" Author="John Edmiston" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Summary="" Sequence="6">
+        <media Name="The Lazy Sluggard" Author="John Edmiston" Url="https://eternityradio.org/UM/assets/102619.mp3" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Sequence="1" Summary=""></media>
+        <media Name="Proverbs 1:1-7" Author="John Edmiston" Url="https://eternityradio.org/UM/assets/092819.mp3" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Sequence="2" Summary=""></media>
+        <media Name="Proverbs 1:20-23" Author="John Edmiston" Url="https://eternityradio.org/UM/assets/100519.mp3" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Sequence="3" Summary=""></media>
+        <media Name="Proverbs 2:1-5" Author="John Edmiston" Url="https://eternityradio.org/UM/assets/101219.mp3" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Sequence="4" Summary=""></media>
+        <media Name="Proverbs 3:5,6" Author="John Edmiston" Url="https://eternityradio.org/UM/assets/101919.mp3" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Sequence="5" Summary=""></media>
+        <media Name="Proverbs 6:16-19" Author="John Edmiston" Url="https://eternityradio.org/UM/assets/110219.mp3" CoverImage="EternityRadioApp.Images.UpliftingMoments.jpg" Sequence="6" Summary=""></media>
+      </series>
+    </category>
+    <!-- Insights for Eternity -->
+    <category Name="Insights for Eternity" Author="John Edmiston" CoverImage="EternityRadioApp.Images.Insights.jpg" Summary="30 minute Bible-teaching programs by John Edmiston, teaching those who teach others."  Sequence="2" >
+      <document></document>
+      <series Name="Kingdom of God" Author="John Edmiston" CoverImage="EternityRadioApp.Images.Insights.jpg" Summary="" Sequence="1">
+        <media Name="What Is The Kingdom?" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/2020_09_26_-_ife-57_-_kingdom_of_god%2c_part_1.mp3" CoverImage="EternityRadioApp.Images.Insights.jpg" Sequence="1" Summary=""></media>
+        <media Name="Jesus Is The King" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/2020_10_03_-_ife-58_-_kingdom_of_god%2c_part_2.mp3" CoverImage="EternityRadioApp.Images.Insights.jpg" Sequence="2" Summary=""></media>
+        <media Name="The Throne" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/2020_10_10_-_ife-59_-_kingdom_of_god%2c_part_3_-_the_throne_of_god.mp3" CoverImage="EternityRadioApp.Images.Insights.jpg" Sequence="3" Summary=""></media>
+        <media Name="The Saints' Throne" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/2020_10_10_-_ife-59_-_kingdom_of_god%2c_part_3_-_the_throne_of_god.mp3" CoverImage="EternityRadioApp.Images.Insights.jpg" Sequence="4" Summary=""></media>
+        <media Name="The Spirit of the Kingdom" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/2020_10_24_-_ife-61_-_kingdom_of_god%2c_part_5_-_the_holy_spirit.mp3" CoverImage="EternityRadioApp.Images.Insights.jpg" Sequence="5" Summary=""></media>
+      </series>
+      <series Name="Colossians" Author="John Edmiston" CoverImage="EternityRadioApp.Images.Insights.jpg" Summary="" Sequence="2">
+        <media Name="Colossians 1:1-7" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/ife_col1_1-7_final.mp3" CoverImage="EternityRadioApp.Images.Insights.jpg" Sequence="1" Summary=""></media>
+        <media Name="Colossians 1:8-14" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/ife_col1_9_14_final.mp3" CoverImage="EternityRadioApp.Images.Insights.jpg" Sequence="2" Summary=""></media>
+        <media Name="Colossians 1:15-20" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/colossians1_15_20_final.mp3" CoverImage="EternityRadioApp.Images.Insights.jpg" Sequence="3" Summary=""></media>
+        <media Name="Colossians 1:21-23" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/ife_colossians_1_21_23.mp3" CoverImage="EternityRadioApp.Images.Insights.jpg" Sequence="4" Summary=""></media>
+        <media Name="Colossians 1:24-29" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/ife_colossians_1_24_29.mp3" CoverImage="EternityRadioApp.Images.Insights.jpg" Sequence="5" Summary=""></media>
+        <media Name="Colossians 2:1-3" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/ife_colossians_2_1-3.mp3" CoverImage="EternityRadioApp.Images.Insights.jpg" Sequence="6" Summary=""></media>
+        <media Name="Colossians 2:8-10" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/ife_colossians_2-8-10.mp3" CoverImage="EternityRadioApp.Images.Insights.jpg" Sequence="7" Summary=""></media>
+        <media Name="Colossians 2:4-7" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/ife-08_col_2_8-10_192kbps.mp3" CoverImage="EternityRadioApp.Images.Insights.jpg" Sequence="8" Summary=""></media>
+        <media Name="Colossians 2:11-12" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/ife_colossians_2_11-12.mp3" CoverImage="EternityRadioApp.Images.Insights.jpg" Sequence="9" Summary=""></media>
+        <media Name="Colossians 2:13-15" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/colossians_2_13-15.mp3" CoverImage="EternityRadioApp.Images.Insights.jpg" Sequence="10" Summary=""></media>
+        <media Name="Colossians 2:16-19" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/ife_col_2_16-19.mp3" CoverImage="EternityRadioApp.Images.Insights.jpg" Sequence="11" Summary=""></media>
+        <media Name="Colossians 2:20-23" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/ife_col_2_20-23.mp3" CoverImage="EternityRadioApp.Images.Insights.jpg" Sequence="12" Summary=""></media>
+        <media Name="Colossians 3:1-4" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/colossians_3_1-4.mp3" CoverImage="EternityRadioApp.Images.Insights.jpg" Sequence="13" Summary=""></media>
+        <media Name="Colossians 3:5-9" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/colossians_3_5-9.mp3" CoverImage="EternityRadioApp.Images.Insights.jpg" Sequence="14" Summary=""></media>
+        <media Name="Colossians 3:10-14" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/colossians_3_10-14.mp3" CoverImage="EternityRadioApp.Images.Insights.jpg" Sequence="15" Summary=""></media>
+        <media Name="Colossians 3:15-17" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/colossians_3_15-17.mp3" CoverImage="EternityRadioApp.Images.Insights.jpg" Sequence="16" Summary=""></media>
+        <media Name="Colossians 3:18-4:1" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/colossians_3_18-4_1.mp3" CoverImage="EternityRadioApp.Images.Insights.jpg" Sequence="17" Summary=""></media>
+        <media Name="Colossians 4:2-6" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/colossians_4_2-6.mp3" CoverImage="EternityRadioApp.Images.Insights.jpg" Sequence="18" Summary=""></media>
+        <media Name="Colossians 4:7-11" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/colossians_4_7-11.mp3" CoverImage="EternityRadioApp.Images.Insights.jpg" Sequence="19" Summary=""></media>
+        <media Name="Colossians 4:12-18" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/colossians_4_12-18_1.mp3" CoverImage="EternityRadioApp.Images.Insights.jpg" Sequence="20" Summary=""></media>
+      </series>
+      <series Name="Prayer In The New Testament" Author="John Edmiston" CoverImage="EternityRadioApp.Images.Insights.jpg" Summary="" Sequence="3">
+        <media Name="Matthew Chapter 6" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/ife-33---matthew-ch6.mp3" CoverImage="EternityRadioApp.Images.Insights.jpg" Sequence="1" Summary=""></media>
+        <media Name="Matthew Chapter 7" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/ife-34---matthew-ch7.mp3" CoverImage="EternityRadioApp.Images.Insights.jpg" Sequence="2" Summary=""></media>
+        <media Name="James Chapter 5" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/ife-35---james-ch5.mp3" CoverImage="EternityRadioApp.Images.Insights.jpg" Sequence="3" Summary=""></media>
+        <media Name="1 John Chapter 5" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/ife-36---1-john-ch5.mp3" CoverImage="EternityRadioApp.Images.Insights.jpg" Sequence="4" Summary=""></media>
+        <media Name="James Chapter 1" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/james_1_5-8_032120.mp3" CoverImage="EternityRadioApp.Images.Insights.jpg" Sequence="5" Summary=""></media>
+      </series>
+      <series Name="High-Level Spiritual Warfare" Author="John Edmiston" CoverImage="EternityRadioApp.Images.Insights.jpg" Summary="" Sequence="4">
+        <media Name="Introduction To Spiritual Warfare" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/2020_04_04_-_ife-38_-_spiritual_warfare%2c_part_1_-_introduction.mp3" CoverImage="EternityRadioApp.Images.Insights.jpg" Sequence="1" Summary=""></media>
+        <media Name="The King of Babylon" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/2020_04_11_-_ife-39_-_spiritual_warfare%2c_part_2_-_the_king_of_babylon_(isaiah_ch14).mp3" CoverImage="EternityRadioApp.Images.Insights.jpg" Sequence="2" Summary=""></media>
+        <media Name="The Armor of God" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/2020_04_18_-_ife-40_-_spiritual_warfare%2c_part_3_-_the_armor_of_god_(eph_ch6).mp3" CoverImage="EternityRadioApp.Images.Insights.jpg" Sequence="3" Summary=""></media>
+        <media Name="Temptation In The Wilderness" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/2020_04_25_-_ife-41_-_spiritual_warfare%2c_part_4_-_temptation_in_the_wilderness_(matt_ch4).mp3" CoverImage="EternityRadioApp.Images.Insights.jpg" Sequence="4" Summary=""></media>
+        <media Name="War In The Heavens" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/2020_05_02_-_ife-42_-_spiritual_warfare%2c_part_5_-_war_in_the_heavens_(rev_ch12).mp3" CoverImage="EternityRadioApp.Images.Insights.jpg" Sequence="5" Summary=""></media>
+        <media Name="The Anti-Christ and the False Prophet" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/2020_05_09_-_ife-43_-_spiritual_warfare%2c_part_6_-_antichrist_-_false_prophet_(rev_ch13).mp3" CoverImage="EternityRadioApp.Images.Insights.jpg" Sequence="6" Summary=""></media>
+        <media Name="Who Are The 144,000" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/2020_05_16_-_ife-44_-_spiritual_warfare%2c_part_7_-_who_are_the_144%2c000_(rev_ch14).mp3" CoverImage="EternityRadioApp.Images.Insights.jpg" Sequence="7" Summary=""></media>
+        <media Name="The Gathering In Of The Saints" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/2020_05_23_-_ife-45_-_spiritual_warfare%2c_part_8_-_gathering_in_of_the_saints_(rev_ch15).mp3" CoverImage="EternityRadioApp.Images.Insights.jpg" Sequence="8" Summary=""></media>
+        <media Name="The Seven Bowl Judgments" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/2020_05_30_-_ife-46_-_spiritual_warfare%2c_part_9_-_the_seven_bowl_judgements_(rev_ch16).mp3" CoverImage="EternityRadioApp.Images.Insights.jpg" Sequence="9" Summary=""></media>
+        <media Name="The Great Harlot" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/2020_06_06_-_ife-47_-_spiritual_warfare%2c_part_10_-_the_great_harlot%2c_babylon_(rev_ch17).mp3" CoverImage="EternityRadioApp.Images.Insights.jpg" Sequence="10" Summary=""></media>
+        <media Name="The Fall of Babylon" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/2020_06_13_-_ife-48_-_spiritual_warfare%2c_part_11_-_the_fall_of_babylon_(rev_ch18).mp3" CoverImage="EternityRadioApp.Images.Insights.jpg" Sequence="11" Summary=""></media>
+        <media Name="The Lord God Almighty" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/2020_06_20_-_ife-49_-_spiritual_warfare%2c_part_12_-_the_lord_god_almighty_reigns_(rev_ch19).mp3" CoverImage="EternityRadioApp.Images.Insights.jpg" Sequence="12" Summary=""></media>
+        <media Name="The Thousand-Year Reign" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/2020_06_27_-_ife-50_-_spiritual_warfare%2c_part_13_-_1%2c000_year_reign_(rev_ch20).mp3" CoverImage="EternityRadioApp.Images.Insights.jpg" Sequence="13" Summary=""></media>
+      </series>
+      <series Name="Grace" Author="John Edmiston" CoverImage="EternityRadioApp.Images.Insights.jpg" Summary="" Sequence="5">
+        <media Name="Downloading Grace From Heaven" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/ife-21---downloading-grace-from-heaven%2c-part-1.mp3" CoverImage="EternityRadioApp.Images.Insights.jpg" Sequence="1" Summary=""></media>
+        <media Name="What is Grace - Part 1" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/ife-22---what-is-grace%2c-part-1.mp3" CoverImage="EternityRadioApp.Images.Insights.jpg" Sequence="2" Summary=""></media>
+        <media Name="What is Grace - Part 2" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/ife-23---what-is-grace%2c-part-2.mp3" CoverImage="EternityRadioApp.Images.Insights.jpg" Sequence="3" Summary=""></media>
+        <media Name="Faith and Grace" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/ife-24---faith-and-grace.mp3" CoverImage="EternityRadioApp.Images.Insights.jpg" Sequence="4" Summary=""></media>
+        <media Name="Receiving Grace" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/ife-25---receiving-grace.mp3" CoverImage="EternityRadioApp.Images.Insights.jpg" Sequence="5" Summary=""></media>
+        <media Name="Wisdom and Grace" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/ife-26---wisdom-and-grace.mp3" CoverImage="EternityRadioApp.Images.Insights.jpg" Sequence="6" Summary=""></media>
+        <media Name="Temptation and Grace" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/ife-27---temptation-and-grace.mp3" CoverImage="EternityRadioApp.Images.Insights.jpg" Sequence="7" Summary=""></media>
+        <media Name="Abiding in Grace" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/ife-28---abiding-in-grace.mp3" CoverImage="EternityRadioApp.Images.Insights.jpg" Sequence="8" Summary=""></media>
+        <media Name="Implementing Grace" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/ife-29---implementing-grace.mp3" CoverImage="EternityRadioApp.Images.Insights.jpg" Sequence="9" Summary=""></media>
+        <media Name="Doing What We Have Learned" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/ife-30---doing-what-we-have-learned.mp3" CoverImage="EternityRadioApp.Images.Insights.jpg" Sequence="10" Summary=""></media>
+      </series>
+      <series Name="Miscellaneous" Author="John Edmiston" CoverImage="EternityRadioApp.Images.Insights.jpg" Summary="" Sequence="6">
+        <media Name="Psalm 107" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/2020_07_04_-_ife-51_-_psalm_107.mp3" CoverImage="EternityRadioApp.Images.Insights.jpg" Sequence="1" Summary=""></media>
+        <media Name="Overwhelmed" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/2020_07_11_-_ife-52_-_overwhelmed.mp3" CoverImage="EternityRadioApp.Images.Insights.jpg" Sequence="2" Summary=""></media>
+        <media Name="Being Gentle With Yourself" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/2020_07_18_-_ife-53_-_being_gentle_with_yourself.mp3" CoverImage="EternityRadioApp.Images.Insights.jpg" Sequence="3" Summary=""></media>
+        <media Name="Spiritual Power" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/2020_07_25_-_ife-54_-_spiritual_power.mp3" CoverImage="EternityRadioApp.Images.Insights.jpg" Sequence="4" Summary=""></media>
+        <media Name="The Storm" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/2020_08_01_-_ife-55_-_the_storm.mp3" CoverImage="EternityRadioApp.Images.Insights.jpg" Sequence="5" Summary=""></media>
+        <media Name="New Wineskins" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/2020_08_08_-_ife-56_-_new_wineskins.mp3" CoverImage="EternityRadioApp.Images.Insights.jpg" Sequence="6" Summary=""></media>
+      </series>
+    </category>
+    <!-- The One Another Commandments -->
+    <category Name="The One Another Commandments" Author="John Edmiston" CoverImage="EternityRadioApp.Images.OneAnother.jpg" Summary="30 minute programs on the 'one another' commandments in the New Testament such as love one another, encourage one another etc." Sequence="3">
+      <document></document>
+      <series Name="The One Another Commandments" Author="John Edmiston" CoverImage="EternityRadioApp.Images.OneAnother.jpg" Summary="" Sequence="1">
+        <media Name="Introduction to the Series" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/1_one_another_Intro.mp3" CoverImage="EternityRadioApp.Images.OneAnother.jpg" Sequence="1" Summary=""></media>
+        <media Name="Love One Another" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/2_love_one_another.mp3" CoverImage="EternityRadioApp.Images.OneAnother.jpg" Sequence="2" Summary=""></media>
+        <media Name="Serve One Another" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/3_serve_one_another.mp3" CoverImage="EternityRadioApp.Images.OneAnother.jpg" Sequence="3" Summary=""></media>
+        <media Name="Encourage One Another" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/4_encourage_one_another.mp3" CoverImage="EternityRadioApp.Images.OneAnother.jpg" Sequence="4" Summary=""></media>
+        <media Name="Instruct One Another" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/6_instruct_one_another.mp3" CoverImage="EternityRadioApp.Images.OneAnother.jpg" Sequence="5" Summary=""></media>
+        <media Name="Forgive One Another" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/6_instruct_one_another.mp3" CoverImage="EternityRadioApp.Images.OneAnother.jpg" Sequence="6" Summary=""></media>
+        <media Name="Bear One Another's Burdens" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/7_bear_one_anothers_burdens.mp3" CoverImage="EternityRadioApp.Images.OneAnother.jpg" Sequence="7" Summary=""></media>
+        <media Name="Be At Peace With One Another" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/8_be_at_peace.mp3" CoverImage="EternityRadioApp.Images.OneAnother.jpg" Sequence="8" Summary=""></media>
+        <media Name="Be Hospitable To One Another" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/9_be_hospitable.mp3" CoverImage="EternityRadioApp.Images.OneAnother.jpg" Sequence="9" Summary=""></media>
+        <media Name="Be Patient With One Another" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/10_Be_Patient.mp3" CoverImage="EternityRadioApp.Images.OneAnother.jpg" Sequence="10" Summary=""></media>
+        <media Name="Honor One Another" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/11_honor_one_another.mp3" CoverImage="EternityRadioApp.Images.OneAnother.jpg" Sequence="11" Summary=""></media>
+      </series>
+    </category>
+    <!-- Spiritual Discernment For Pastors-->
+    <category Name="Spiritual Discernment For Pastors" Author="John Edmiston" CoverImage="EternityRadioApp.Images.Downloads.jpg" Summary="12 programs (30 minutes each) about cults, false teaching and spiritual deception to help pastors with issues of spiritual error in their churches" Sequence="4">
+      <document></document>
+      <series Name="Spiritual Discernment For Pastors" Author="John Edmiston" CoverImage="EternityRadioApp.Images.Downloads.jpg" Summary="12 programs (30 minutes each) about cults, false teaching and spiritual deception to help pastors with issues of spiritual error in their churches" Sequence="1">
+        <media Name="Tests of True and False Doctrine from the Book of 1 John" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/1_1John_tests.mp3" CoverImage="EternityRadioApp.Images.Downloads.jpg" Sequence="1" Summary="The tests of true doctrine from the book of 1 John which are having faith in Jesus, and believing that Jesus is the Son of God, Jesus has come in the flesh, and that Jesus is the Christ."></media>
+        <media Name="How To Distinguish Between True and False Christians" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/2_true_false_Christians.mp3" CoverImage="EternityRadioApp.Images.Downloads.jpg" Sequence="2" Summary="This program looks at how to tell the difference between a true Christian and a false Christian. The tests, in 1 John are: continued fellowship with the saints, righteousness, love, and the presence of the Holy Spirit in the life of the believer."></media>
+        <media Name="How Spiritual Deception Operates" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/3_Spiritual_Deception.mp3" CoverImage="EternityRadioApp.Images.Downloads.jpg" Sequence="3" Summary="Examines how spiritual deception operates, the tactics of wolves in sheep's clothing, the promotion of lawlessness and the promotion of false claims by false apostles."></media>
+        <media Name="False Miracles in the End Times" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/4_false_miracles.mp3" CoverImage="EternityRadioApp.Images.Downloads.jpg" Sequence="4" Summary="There are nine Bible passages that talk about false miracles in the End Times and how the Anti-Christ and the False Prophet will use them to try to deceive Christians."></media>
+        <media Name="How Cults Manipulate People" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/5_how_cults_manipulate.mp3" CoverImage="EternityRadioApp.Images.Downloads.jpg" Sequence="5" Summary="Cults try to manipulate people by controlling their emotions, behavior, relationships, thinking and their access to information. This program exposes these evil tactics."></media>
+        <media Name="The Danger of Conspiracy Theories" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/6_conspiracy_theories.mp3" CoverImage="EternityRadioApp.Images.Downloads.jpg" Sequence="6" Summary="Isaiah chapter eight tells us not to pay attention to conspiracy theories but to put our trust in God and not to fear people or princes. This program helps Christian to put these conspiracy theories aside and to be mentally healthy."></media>
+        <media Name="Three Dimensions of Crazy Cult Thinking" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/9_occult.mp3" CoverImage="EternityRadioApp.Images.Downloads.jpg" Sequence="7" Summary="This program explains how cults think and what is wrong with it, how to discern it and avoid it and how to operate in the love of God instead of the fearful cult mindset."></media>
+        <media Name="Commerical Cults" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/9_occult.mp3" CoverImage="EternityRadioApp.Images.Downloads.jpg" Sequence="8" Summary="Some cults look like businesses and take over people's lives with promises of wealth from their sales program. Then they become life-dominating and damaging."></media>
+        <media Name="What is Wrong with the Occult" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/9_occult.mp3" CoverImage="EternityRadioApp.Images.Downloads.jpg" Sequence="9" Summary="The Bible strictly forbids participation in the occult, witchcraft, casting spells. fortune-telling, astrology and divination. This programs explains those Scriptures."></media>
+        <media Name="The Difference Between True and False Revival" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/10_false_true_revival.mp3" CoverImage="EternityRadioApp.Images.Downloads.jpg" Sequence="10" Summary="Some so-called revivals are false and do not lead to repentance and true faith. Learn the difference between true godly revival and fake shallow, manipulative revival."></media>
+        <media Name="The Prosperity Gospel is a False Gospel" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/11_prosperity_gospel.mp3" CoverImage="EternityRadioApp.Images.Downloads.jpg" Sequence="11" Summary="God does indeed prosper us, but not in the way claimed by the preachers of the prosperity gospel that has led so many Christians astray from the faith."></media>
+        <media Name="Magicians or Christians? Jannes and Jambres, Simon Magus" Author="John Edmiston" Url="https://eternityradio.org/ife/assets/12_magicians_or_christians.mp3" CoverImage="EternityRadioApp.Images.Downloads.jpg" Sequence="12" Summary="The Bible records the Egyptian magicians who opposed Moses and the Samaritan magician who opposed Peter and John and the magician Bar-Jesus who opposed Paul. This program shows the difference between magic and Christianity."></media>
+      </series>
+    </category>
+    <!-- Harvestime Audio -->
+
+    <category Name="Harvestime Audio" Author="Vince Rizzo" CoverImage="EternityRadioApp.Images.HarvestTime.png" Summary="downloadable MP3 files where Dr. Vince Rizzo reads the Harvestime manuals which are very practical training in evangelism and church-planting along with basic Bible-teaching." Sequence="5">
+      <series Name="Old Testament Survey" Author="Vince Rizzo" CoverImage="EternityRadioApp.Images.HarvestTime.png" Summary="This survey provides an overview of the entire Bible. Study outlines of each book of the Bible are provided for further development by the student." Sequence="1">
+        <document Name="Old Testament Survey" Url="https://globalchristians.org/pdf/otsurvey.pdf" FileType="PDF" Sequence="1"></document>
+        <media Name="Intro" Author="Vince Rizzo" Url="https://eternityradio.org/assets/old_testament_survey_intro.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="1" Summary=""></media>
+        <media Name="Lesson 1" Author="Vince Rizzo" Url="https://eternityradio.org/assets/old_testament_survey_lesson_1.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="2" Summary=""></media>
+        <media Name="Lesson 2" Author="Vince Rizzo" Url="https://eternityradio.org/assets/old_testament_survey_lesson_2.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="3" Summary=""></media>
+        <media Name="Lesson 3" Author="Vince Rizzo" Url="https://eternityradio.org/assets/old_testament_survey_lesson_3.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="4" Summary=""></media>
+        <media Name="Lesson 4" Author="Vince Rizzo" Url="https://eternityradio.org/assets/old_testament_survey_lesson_4.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="5" Summary=""></media>
+        <media Name="Lesson 5" Author="Vince Rizzo" Url="https://eternityradio.org/assets/old_testament_survey_lesson_5.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="6" Summary=""></media>
+        <media Name="Lesson 6" Author="Vince Rizzo" Url="https://eternityradio.org/assets/old_testament_survey_lesson_6.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="7" Summary=""></media>
+        <media Name="Lesson 7" Author="Vince Rizzo" Url="https://eternityradio.org/assets/old_testament_survey_lesson_7.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="8" Summary=""></media>
+        <media Name="Lesson 8" Author="Vince Rizzo" Url="https://eternityradio.org/assets/old_testament_survey_lesson_8.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="9" Summary=""></media>
+        <media Name="Lesson 9" Author="Vince Rizzo" Url="https://eternityradio.org/assets/old_testament_survey_lesson_9.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="10" Summary=""></media>
+        <media Name="Lesson 10" Author="Vince Rizzo" Url="https://eternityradio.org/assets/old_testament_survey_lesson_10.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="11" Summary=""></media>
+        <media Name="Lesson 11" Author="Vince Rizzo" Url="https://eternityradio.org/assets/old_testament_survey_lesson_11.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="12" Summary=""></media>
+        <media Name="Lesson 12" Author="Vince Rizzo" Url="https://eternityradio.org/assets/old_testament_survey_lesson_12.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="13" Summary=""></media>
+        <media Name="Lesson 13" Author="Vince Rizzo" Url="https://eternityradio.org/assets/old_testament_survey_lesson_13.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="14" Summary=""></media>
+        <media Name="Lesson 14" Author="Vince Rizzo" Url="https://eternityradio.org/assets/old_testament_survey_lesson_14.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="15" Summary=""></media>
+        <media Name="Lesson 15" Author="Vince Rizzo" Url="https://eternityradio.org/assets/old_testament_survey_lesson_15.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="16" Summary=""></media>
+        <media Name="Lesson 16" Author="Vince Rizzo" Url="https://eternityradio.org/assets/old_testament_survey_lesson_16.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="17" Summary=""></media>
+        <media Name="Lesson 17" Author="Vince Rizzo" Url="https://eternityradio.org/assets/old_testament_survey_lesson_17.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="18" Summary=""></media>
+        <media Name="Lesson 18" Author="Vince Rizzo" Url="https://eternityradio.org/assets/old_testament_survey_lesson_18.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="19" Summary=""></media>
+        <media Name="Lesson 19" Author="Vince Rizzo" Url="https://eternityradio.org/assets/old_testament_survey_lesson_19.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="20" Summary=""></media>
+        <media Name="Lesson 20" Author="Vince Rizzo" Url="https://eternityradio.org/assets/old_testament_survey_lesson_20.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="21" Summary=""></media>
+        <media Name="Lesson 21" Author="Vince Rizzo" Url="https://eternityradio.org/assets/old_testament_survey_lesson_21.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="22" Summary=""></media>
+        <media Name="Lesson 22" Author="Vince Rizzo" Url="https://eternityradio.org/assets/old_testament_survey_lesson_22.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="23" Summary=""></media>
+        <media Name="Lesson 23" Author="Vince Rizzo" Url="https://eternityradio.org/assets/old_testament_survey_lesson_23.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="24" Summary=""></media>
+        <media Name="Lesson 24" Author="Vince Rizzo" Url="https://eternityradio.org/assets/old_testament_survey_lesson_24.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="25" Summary=""></media>
+        <media Name="Lesson 25" Author="Vince Rizzo" Url="https://eternityradio.org/assets/old_testament_survey_lesson_25.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="26" Summary=""></media>
+        <media Name="Lesson 26" Author="Vince Rizzo" Url="https://eternityradio.org/assets/old_testament_survey_lesson_26.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="27" Summary=""></media>
+        <media Name="Lesson 27" Author="Vince Rizzo" Url="https://eternityradio.org/assets/old_testament_survey_lesson_27.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="28" Summary=""></media>
+        <media Name="Lesson 28" Author="Vince Rizzo" Url="https://eternityradio.org/assets/old_testament_survey_lesson_28.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="29" Summary=""></media>
+        <media Name="Lesson 29" Author="Vince Rizzo" Url="https://eternityradio.org/assets/old_testament_survey_lesson_29.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="30" Summary=""></media>
+        <media Name="Lesson 30" Author="Vince Rizzo" Url="https://eternityradio.org/assets/old_testament_survey_lesson_30.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="31" Summary=""></media>
+        <media Name="Lesson 31" Author="Vince Rizzo" Url="https://eternityradio.org/assets/old_testament_survey_lesson_31.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="32" Summary=""></media>
+        <media Name="Lesson 32" Author="Vince Rizzo" Url="https://eternityradio.org/assets/old_testament_survey_lesson_32.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="33" Summary=""></media>
+        <media Name="Lesson 33" Author="Vince Rizzo" Url="https://eternityradio.org/assets/old_testament_survey_lesson_33.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="34" Summary=""></media>
+        <media Name="Lesson 34" Author="Vince Rizzo" Url="https://eternityradio.org/assets/old_testament_survey_lesson_34.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="35" Summary=""></media>
+        <media Name="Lesson 35" Author="Vince Rizzo" Url="https://eternityradio.org/assets/old_testament_survey_lesson_35.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="36" Summary=""></media>
+        <media Name="Lesson 36" Author="Vince Rizzo" Url="https://eternityradio.org/assets/old_testament_survey_lesson_36.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="37" Summary=""></media>
+        <media Name="Lesson 37" Author="Vince Rizzo" Url="https://eternityradio.org/assets/old_testament_survey_lesson_37.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="38" Summary=""></media>
+        <media Name="Lesson 38" Author="Vince Rizzo" Url="https://eternityradio.org/assets/old_testament_survey_lesson_38.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="39" Summary=""></media>
+        <media Name="Lesson 39" Author="Vince Rizzo" Url="https://eternityradio.org/assets/old_testament_survey_lesson_39.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="40" Summary=""></media>
+        <media Name="Lesson 40" Author="Vince Rizzo" Url="https://eternityradio.org/assets/old_testament_survey_lesson_40.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="41" Summary=""></media>
+      </series>
+      <series Name="New Testament Survey" Author="Vince Rizzo" CoverImage="EternityRadioApp.Images.HarvestTime.png" Summary="This survey provides an overview of the entire Bible. Study outlines of each book of the Bible are provided for further development by the student." Sequence="2">
+        <document Name="New Testament Survey" Url="https://globalchristians.org/pdf/ntsurvey.pdf" FileType="PDF" Sequence="1"></document>
+        <media Name="Lesson 1" Author="Vince Rizzo" Url="https://eternityradio.org/assets/new_testament_survey_lesson_1.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="1" Summary=""></media>
+        <media Name="Lesson 2" Author="Vince Rizzo" Url="https://eternityradio.org/assets/new_testament_survey_lesson_2.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="2" Summary=""></media>
+        <media Name="Lesson 3" Author="Vince Rizzo" Url="https://eternityradio.org/assets/new_testament_survey_lesson_3.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="3" Summary=""></media>
+        <media Name="Lesson 4" Author="Vince Rizzo" Url="https://eternityradio.org/assets/new_testament_survey_lesson_4.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="4" Summary=""></media>
+        <media Name="Lesson 5" Author="Vince Rizzo" Url="https://eternityradio.org/assets/new_testament_survey_lesson_5.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="5" Summary=""></media>
+        <media Name="Lesson 6" Author="Vince Rizzo" Url="https://eternityradio.org/assets/new_testament_survey_lesson_6.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="6" Summary=""></media>
+        <media Name="Lesson 7" Author="Vince Rizzo" Url="https://eternityradio.org/assets/new_testament_survey_lesson_7.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="7" Summary=""></media>
+        <media Name="Lesson 8" Author="Vince Rizzo" Url="https://eternityradio.org/assets/new_testament_survey_lesson_8.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="8" Summary=""></media>
+        <media Name="Lesson 9" Author="Vince Rizzo" Url="https://eternityradio.org/assets/new_testament_survey_lesson_9.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="9" Summary=""></media>
+        <media Name="Lesson 10" Author="Vince Rizzo" Url="https://eternityradio.org/assets/new_testament_survey_lesson_10.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="10" Summary=""></media>
+        <media Name="Lesson 11" Author="Vince Rizzo" Url="https://eternityradio.org/assets/new_testament_survey_lesson_11.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="11" Summary=""></media>
+        <media Name="Lesson 12" Author="Vince Rizzo" Url="https://eternityradio.org/assets/new_testament_survey_lesson_12.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="12" Summary=""></media>
+        <media Name="Lesson 13" Author="Vince Rizzo" Url="https://eternityradio.org/assets/new_testament_survey_lesson_13.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="13" Summary=""></media>
+        <media Name="Lesson 14" Author="Vince Rizzo" Url="https://eternityradio.org/assets/new_testament_survey_lesson_14.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="14" Summary=""></media>
+        <media Name="Lesson 15" Author="Vince Rizzo" Url="https://eternityradio.org/assets/new_testament_survey_lesson_15.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="15" Summary=""></media>
+        <media Name="Lesson 16" Author="Vince Rizzo" Url="https://eternityradio.org/assets/new_testament_survey_lesson_16.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="16" Summary=""></media>
+        <media Name="Lesson 17" Author="Vince Rizzo" Url="https://eternityradio.org/assets/new_testament_survey_lesson_17.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="17" Summary=""></media>
+        <media Name="Lesson 18" Author="Vince Rizzo" Url="https://eternityradio.org/assets/new_testament_survey_lesson_18.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="18" Summary=""></media>
+        <media Name="Lesson 19" Author="Vince Rizzo" Url="https://eternityradio.org/assets/new_testament_survey_lesson_19.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="19" Summary=""></media>
+        <media Name="Lesson 20" Author="Vince Rizzo" Url="https://eternityradio.org/assets/new_testament_survey_lesson_20.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="20" Summary=""></media>
+        <media Name="Lesson 21" Author="Vince Rizzo" Url="https://eternityradio.org/assets/new_testament_survey_lesson_21.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="21" Summary=""></media>
+      </series>
+      <series Name="Creative Bible Study Methods" Author="Vince Rizzo" CoverImage="EternityRadioApp.Images.HarvestTime.png" Summary="This course equips students for personal study of the Word of God after the conclusion of Institute training. Students learn how to study the Bible by book, chapter, paragraph, verse, and word. Other methods taught include biographical, devotional, theological, typological, and topical. Special guidelines for studying Bible poetry and prophecy are presented and students are taught methods of charting and outlining." Sequence="3">
+        <document Name="Creative Bible Study Methods" Url="https://globalchristians.org/pdf/creative-bible-study.pdf" FileType="PDF" Sequence="1"></document>
+        <media  Name="Lesson 1" Author="Vince Rizzo" Url="https://eternityradio.org/assets/creative_study_methods_lesson_1.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="1" Summary=""></media>
+        <media  Name="Lesson 2" Author="Vince Rizzo" Url="https://eternityradio.org/assets/creative_study_methods_lesson_2.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="2" Summary=""></media>
+        <media  Name="Lesson 3" Author="Vince Rizzo" Url="https://eternityradio.org/assets/creative_study_methods_lesson_3.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="3" Summary=""></media>
+        <media  Name="Lesson 4" Author="Vince Rizzo" Url="https://eternityradio.org/assets/creative_study_methods_lesson_4.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="4" Summary=""></media>
+        <media  Name="Lesson 5" Author="Vince Rizzo" Url="https://eternityradio.org/assets/creative_study_methods_lesson_5.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="5" Summary=""></media>
+        <media  Name="Lesson 6" Author="Vince Rizzo" Url="https://eternityradio.org/assets/creative_study_methods_lesson_6.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="6" Summary=""></media>
+        <media  Name="Lesson 7" Author="Vince Rizzo" Url="https://eternityradio.org/assets/creative_study_methods_lesson_7.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="7" Summary=""></media>
+        <media  Name="Lesson 8" Author="Vince Rizzo" Url="https://eternityradio.org/assets/creative_study_methods_lesson_8.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="8" Summary=""></media>
+        <media  Name="Lesson 9" Author="Vince Rizzo" Url="https://eternityradio.org/assets/creative_study_methods_lesson_9.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="9" Summary=""></media>
+        <media  Name="Lesson 10" Author="Vince Rizzo" Url="https://eternityradio.org/assets/creative_study_methods_lesson_10.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="10" Summary=""></media>
+        <media  Name="Lesson 11" Author="Vince Rizzo" Url="https://eternityradio.org/assets/creative_study_methods_lesson_11.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="11" Summary=""></media>
+        <media  Name="Lesson 12" Author="Vince Rizzo" Url="https://eternityradio.org/assets/creative_study_methods_lesson_12.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="12" Summary=""></media>
+        <media  Name="Lesson 13" Author="Vince Rizzo" Url="https://eternityradio.org/assets/creative_study_methods_lesson_13.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="13" Summary=""></media>
+        <media  Name="Lesson 14" Author="Vince Rizzo" Url="https://eternityradio.org/assets/creative_study_methods_lesson_14.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="14" Summary=""></media>
+        <media  Name="Lesson 15" Author="Vince Rizzo" Url="https://eternityradio.org/assets/creative_study_methods_lesson_15.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="15" Summary=""></media>
+        <media  Name="Lesson 16" Author="Vince Rizzo" Url="https://eternityradio.org/assets/creative_study_methods_lesson_16.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="16" Summary=""></media>
+        <media  Name="Lesson 17" Author="Vince Rizzo" Url="https://eternityradio.org/assets/creative_study_methods_lesson_17.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="17" Summary=""></media>
+        <media  Name="Lesson 18" Author="Vince Rizzo" Url="https://eternityradio.org/assets/creative_study_methods_lesson_18.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="18" Summary=""></media>
+        <media  Name="Lesson 19" Author="Vince Rizzo" Url="https://eternityradio.org/assets/creative_study_methods_lesson_19.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="19" Summary=""></media>
+        <media  Name="Lesson 20" Author="Vince Rizzo" Url="https://eternityradio.org/assets/creative_study_methods_lesson_20.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="20" Summary=""></media>
+        <media  Name="Lesson 21" Author="Vince Rizzo" Url="https://eternityradio.org/assets/creative_study_methods_lesson_21.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="21" Summary=""></media>
+      </series>
+      <series Name="Foundation of Faith" Author="Vince Rizzo" CoverImage="EternityRadioApp.Images.HarvestTime.png" Summary="This course stresses the importance of proper spiritual foundations for life and ministry by focusing on foundations of the Christian faith identified in Hebrews 6:1: Repentance, faith, baptism, laying on of hands, resurrection, and eternal judgment." Sequence="5">
+        <document Name="Creative Bible Study Methods" Url="https://globalchristians.org/pdf/foundations-of-faith.pdf" FileType="PDF" Sequence="1"></document>
+        <media Name="Lesson 1" Author="Vince Rizzo" Url="https://eternityradio.org/assets/foundations_of_faith_lesson_1.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="1" Summary=""></media>
+        <media Name="Lesson 2" Author="Vince Rizzo" Url="https://eternityradio.org/assets/foundations_of_faith_lesson_2.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="2" Summary=""></media>
+        <media Name="Lesson 3" Author="Vince Rizzo" Url="https://eternityradio.org/assets/foundations_of_faith_lesson_3.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="3" Summary=""></media>
+        <media Name="Lesson 4" Author="Vince Rizzo" Url="https://eternityradio.org/assets/foundations_of_faith_lesson_4.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="4" Summary=""></media>
+        <media Name="Lesson 5" Author="Vince Rizzo" Url="https://eternityradio.org/assets/foundations_of_faith_lesson_5.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="5" Summary=""></media>
+        <media Name="Lesson 6" Author="Vince Rizzo" Url="https://eternityradio.org/assets/foundations_of_faith_lesson_6.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="6" Summary=""></media>
+        <media Name="Lesson 7" Author="Vince Rizzo" Url="https://eternityradio.org/assets/foundations_of_faith_lesson_7.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="7" Summary=""></media>
+        <media Name="Lesson 8" Author="Vince Rizzo" Url="https://eternityradio.org/assets/foundations_of_faith_lesson_8.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="8" Summary=""></media>
+        <media Name="Lesson 9" Author="Vince Rizzo" Url="https://eternityradio.org/assets/foundations_of_faith_lesson_9.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="9" Summary=""></media>
+        <media Name="Lesson 10" Author="Vince Rizzo" Url="https://eternityradio.org/assets/foundations_of_faith_lesson_10.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="10" Summary=""></media>
+        <media Name="Lesson 11" Author="Vince Rizzo" Url="https://eternityradio.org/assets/foundations_of_faith_lesson_11.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="11" Summary=""></media>
+      </series>
+      <series Name="Developing A Biblical Worldview" Author="Vince Rizzo" CoverImage="EternityRadioApp.Images.HarvestTime.png" Summary="This course examines the Biblical world view from Genesis through Revelation. God's plan for the nations of the world from the beginning of time is detailed. Current worldwide spiritual need is also presented." Sequence="6">
+        <document Name="Developing A Biblical Worldview" Url="https://globalchristians.org/pdf/biblical-worldview.pdf" FileType="PDF" Sequence="1"></document>
+        <media Name="Lesson 1" Author="Vince Rizzo" Url="https://eternityradio.org/assets/developing_a_biblical_worldview_lesson_1.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="1" Summary=""></media>
+        <media Name="Lesson 2" Author="Vince Rizzo" Url="https://eternityradio.org/assets/developing_a_biblical_worldview_lesson_2.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="2" Summary=""></media>
+        <media Name="Lesson 3" Author="Vince Rizzo" Url="https://eternityradio.org/assets/developing_a_biblical_worldview_lesson_3.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="3" Summary=""></media>
+        <media Name="Lesson 4" Author="Vince Rizzo" Url="https://eternityradio.org/assets/developing_a_biblical_worldview_lesson_4.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="4" Summary=""></media>
+        <media Name="Lesson 5" Author="Vince Rizzo" Url="https://eternityradio.org/assets/developing_a_biblical_worldview_lesson_5.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="5" Summary=""></media>
+        <media Name="Lesson 6" Author="Vince Rizzo" Url="https://eternityradio.org/assets/developing_a_biblical_worldview_lesson_6.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="6" Summary=""></media>
+        <media Name="Lesson 7" Author="Vince Rizzo" Url="https://eternityradio.org/assets/developing_a_biblical_worldview_lesson_7.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="7" Summary=""></media>
+        <media Name="Lesson 8" Author="Vince Rizzo" Url="https://eternityradio.org/assets/developing_a_biblical_worldview_lesson_8.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="8" Summary=""></media>
+        <media Name="Lesson 9" Author="Vince Rizzo" Url="https://eternityradio.org/assets/developing_a_biblical_worldview_lesson_9.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="9" Summary=""></media>
+        <media Name="Lesson 10" Author="Vince Rizzo" Url="https://eternityradio.org/assets/developing_a_biblical_worldview_lesson_10.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="10" Summary=""></media>
+        <media Name="Lesson 11" Author="Vince Rizzo" Url="https://eternityradio.org/assets/developing_a_biblical_worldview_lesson_11.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="11" Summary=""></media>
+      </series>
+      <series Name="Kingdom Living" Author="Vince Rizzo" CoverImage="EternityRadioApp.Images.HarvestTime.png" Summary="The 'Gospel of the Kingdom' shall be preached in all the world before the return of the Lord Jesus Christ (Matthew 24:14). Understanding of Kingdom principles is necessary if one is to spread the Gospel of the Kingdom. This course focuses on patterns and principles of Kingdom living applicable to life and ministry." Sequence="7">
+        <document Name="Kingdom Living" Url="https://globalchristians.org/pdf/kingdom-living.pdf" FileType="PDF" Sequence="1"></document>
+        <media Name="Lesson 1" Author="Vince Rizzo" Url="https://eternityradio.org/assets/kingdom_living_lesson_1.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="1" Summary=""></media>
+        <media Name="Lesson 2" Author="Vince Rizzo" Url="https://eternityradio.org/assets/kingdom_living_lesson_2.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="2" Summary=""></media>
+        <media Name="Lesson 3" Author="Vince Rizzo" Url="https://eternityradio.org/assets/kingdom_living_lesson_3.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="3" Summary=""></media>
+        <media Name="Lesson 4" Author="Vince Rizzo" Url="https://eternityradio.org/assets/kingdom_living_lesson_4.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="4" Summary=""></media>
+        <media Name="Lesson 5" Author="Vince Rizzo" Url="https://eternityradio.org/assets/kingdom_living_lesson_5.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="5" Summary=""></media>
+        <media Name="Lesson 6" Author="Vince Rizzo" Url="https://eternityradio.org/assets/kingdom_living_lesson_6.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="6" Summary=""></media>
+        <media Name="Lesson 7" Author="Vince Rizzo" Url="https://eternityradio.org/assets/kingdom_living_lesson_7.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="7" Summary=""></media>
+        <media Name="Lesson 8" Author="Vince Rizzo" Url="https://eternityradio.org/assets/kingdom_living_lesson_8.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="8" Summary=""></media>
+        <media Name="Lesson 9" Author="Vince Rizzo" Url="https://eternityradio.org/assets/kingdom_living_lesson_9.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="9" Summary=""></media>
+        <media Name="Lesson 10" Author="Vince Rizzo" Url="https://eternityradio.org/assets/kingdom_living_lesson_10.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="10" Summary=""></media>
+        <media Name="Lesson 11" Author="Vince Rizzo" Url="https://eternityradio.org/assets/kingdom_living_lesson_11.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="11" Summary=""></media>
+      </series>
+      <series Name="Knowing God's Voice" Author="Vince Rizzo" CoverImage="EternityRadioApp.Images.HarvestTime.png" Summary="This course explains how God speaks to men today and how to find His general and specific plans for life. A Christian model for decision making is presented, along with guidelines for overcoming wrong decisions, steps to take if you have missed the will of God, and methods for dealing with questionable practices." Sequence="8">
+        <document Name="Knowing God's Voice" Url="https://globalchristians.org/pdf/knowing-gods-voice.pdf" FileType="PDF" Sequence="1"></document>
+        <media Name="Lesson 1" Author="Vince Rizzo" Url="https://eternityradio.org/assets/knowing_gods_voice_lesson_1.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="1" Summary=""></media>
+        <media Name="Lesson 2" Author="Vince Rizzo" Url="https://eternityradio.org/assets/knowing_gods_voice_lesson_2.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="2" Summary=""></media>
+        <media Name="Lesson 3" Author="Vince Rizzo" Url="https://eternityradio.org/assets/knowing_gods_voice_lesson_3.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="3" Summary=""></media>
+        <media Name="Lesson 4" Author="Vince Rizzo" Url="https://eternityradio.org/assets/knowing_gods_voice_lesson_4.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="4" Summary=""></media>
+        <media Name="Lesson 5" Author="Vince Rizzo" Url="https://eternityradio.org/assets/knowing_gods_voice_lesson_5.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="5" Summary=""></media>
+        <media Name="Lesson 6" Author="Vince Rizzo" Url="https://eternityradio.org/assets/knowing_gods_voice_lesson_6.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="6" Summary=""></media>
+        <media Name="Lesson 7" Author="Vince Rizzo" Url="https://eternityradio.org/assets/knowing_gods_voice_lesson_7.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="7" Summary=""></media>
+        <media Name="Lesson 8" Author="Vince Rizzo" Url="https://eternityradio.org/assets/knowing_gods_voice_lesson_8.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="8" Summary=""></media>
+        <media Name="Lesson 9" Author="Vince Rizzo" Url="https://eternityradio.org/assets/knowing_gods_voice_lesson_9.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="9" Summary=""></media>
+        <media Name="Lesson 10" Author="Vince Rizzo" Url="https://eternityradio.org/assets/knowing_gods_voice_lesson_10.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="10" Summary=""></media>
+        <media Name="Lesson 11" Author="Vince Rizzo" Url="https://eternityradio.org/assets/knowing_gods_voice_lesson_11.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="11" Summary=""></media>
+        <media Name="Lesson 12" Author="Vince Rizzo" Url="https://eternityradio.org/assets/knowing_gods_voice_lesson_12.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="12" Summary=""></media>
+      </series>
+      <series Name="Ministry of the Holy Spirit" Author="Vince Rizzo" CoverImage="EternityRadioApp.Images.HarvestTime.png" Summary="This study focuses on the ministry of the Holy Spirit, spiritual fruit, and spiritual gifts. Students are guided in discovery of their own spiritual gifts and position of ministry in the Body of Christ." Sequence="9">
+        <document Name="Ministry of the Holy Spirit" Url="https://globalchristians.org/pdf/holy-spirit.pdf" FileType="PDF" Sequence="1"></document>
+        <media category="Harvestime Audio" parent="Ministry of the Holy Spirit" Name="Lesson 1" Author="Vince Rizzo" Url="https://eternityradio.org/assets/ministry_of_the_holy_spirit_lesson_1.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="1" Summary=""></media>
+        <media category="Harvestime Audio" parent="Ministry of the Holy Spirit" Name="Lesson 2" Author="Vince Rizzo" Url="https://eternityradio.org/assets/ministry_of_the_holy_spirit_lesson_2.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="2" Summary=""></media>
+        <media category="Harvestime Audio" parent="Ministry of the Holy Spirit" Name="Lesson 3" Author="Vince Rizzo" Url="https://eternityradio.org/assets/ministry_of_the_holy_spirit_lesson_3.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="3" Summary=""></media>
+        <media category="Harvestime Audio" parent="Ministry of the Holy Spirit" Name="Lesson 4" Author="Vince Rizzo" Url="https://eternityradio.org/assets/ministry_of_the_holy_spirit_lesson_4.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="4" Summary=""></media>
+        <media category="Harvestime Audio" parent="Ministry of the Holy Spirit" Name="Lesson 5" Author="Vince Rizzo" Url="https://eternityradio.org/assets/ministry_of_the_holy_spirit_lesson_5.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="5" Summary=""></media>
+        <media category="Harvestime Audio" parent="Ministry of the Holy Spirit" Name="Lesson 6" Author="Vince Rizzo" Url="https://eternityradio.org/assets/ministry_of_the_holy_spirit_lesson_6.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="6" Summary=""></media>
+        <media category="Harvestime Audio" parent="Ministry of the Holy Spirit" Name="Lesson 7" Author="Vince Rizzo" Url="https://eternityradio.org/assets/ministry_of_the_holy_spirit_lesson_7.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="7" Summary=""></media>
+        <media category="Harvestime Audio" parent="Ministry of the Holy Spirit" Name="Lesson 8" Author="Vince Rizzo" Url="https://eternityradio.org/assets/ministry_of_the_holy_spirit_lesson_8.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="8" Summary=""></media>
+        <media category="Harvestime Audio" parent="Ministry of the Holy Spirit" Name="Lesson 9" Author="Vince Rizzo" Url="https://eternityradio.org/assets/ministry_of_the_holy_spirit_lesson_9.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="9" Summary=""></media>
+        <media category="Harvestime Audio" parent="Ministry of the Holy Spirit" Name="Lesson 10" Author="Vince Rizzo" Url="https://eternityradio.org/assets/ministry_of_the_holy_spirit_lesson_10.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="10" Summary=""></media>
+        <media category="Harvestime Audio" parent="Ministry of the Holy Spirit" Name="Lesson 11" Author="Vince Rizzo" Url="https://eternityradio.org/assets/ministry_of_the_holy_spirit_lesson_11.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="11" Summary=""></media>
+        <media category="Harvestime Audio" parent="Ministry of the Holy Spirit" Name="Lesson 12" Author="Vince Rizzo" Url="https://eternityradio.org/assets/ministry_of_the_holy_spirit_lesson_12.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="12" Summary=""></media>
+        <media category="Harvestime Audio" parent="Ministry of the Holy Spirit" Name="Lesson 13" Author="Vince Rizzo" Url="https://eternityradio.org/assets/ministry_of_the_holy_spirit_lesson_13.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="13" Summary=""></media>
+      </series>
+      <series Name="Spiritual Warfare" Author="Vince Rizzo" CoverImage="EternityRadioApp.Images.HarvestTime.png" Summary="This course moves participants beyond the natural world into the realm of the spirit. Tactics of the enemy are analyzed and strategies of spiritual warfare assuring victory over the principalities and powers of the spirit world are explained." Sequence="10">
+        <document Name="Spiritual Warfare" Url="https://globalchristians.org/pdf/SpiritualStrategies-Warfare.pdf" FileType="PDF" Sequence="1"></document>
+        <media Name="Lesson 1" Author="Vince Rizzo" Url="https://eternityradio.org/assets/spiritual_warfare_lesson_1.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="1" Summary=""></media>
+        <media Name="Lesson 2" Author="Vince Rizzo" Url="https://eternityradio.org/assets/spiritual_warfare_lesson_2.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="2" Summary=""></media>
+        <media Name="Lesson 3" Author="Vince Rizzo" Url="https://eternityradio.org/assets/spiritual_warfare_lesson_3.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="3" Summary=""></media>
+        <media Name="Lesson 4" Author="Vince Rizzo" Url="https://eternityradio.org/assets/spiritual_warfare_lesson_4.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="4" Summary=""></media>
+        <media Name="Lesson 5" Author="Vince Rizzo" Url="https://eternityradio.org/assets/spiritual_warfare_lesson_5.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="5" Summary=""></media>
+        <media Name="Lesson 6" Author="Vince Rizzo" Url="https://eternityradio.org/assets/spiritual_warfare_lesson_6.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="6" Summary=""></media>
+        <media Name="Lesson 7" Author="Vince Rizzo" Url="https://eternityradio.org/assets/spiritual_warfare_lesson_7.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="7" Summary=""></media>
+        <media Name="Lesson 8" Author="Vince Rizzo" Url="https://eternityradio.org/assets/spiritual_warfare_lesson_8.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="8" Summary=""></media>
+        <media Name="Lesson 9" Author="Vince Rizzo" Url="https://eternityradio.org/assets/spiritual_warfare_lesson_9.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="9" Summary=""></media>
+        <media Name="Lesson 10" Author="Vince Rizzo" Url="https://eternityradio.org/assets/spiritual_warfare_lesson_10.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="10" Summary=""></media>
+        <media Name="Lesson 11" Author="Vince Rizzo" Url="https://eternityradio.org/assets/spiritual_warfare_lesson_11.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="11" Summary=""></media>
+        <media Name="Lesson 12" Author="Vince Rizzo" Url="https://eternityradio.org/assets/spiritual_warfare_lesson_12.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="12" Summary=""></media>
+        <media Name="Lesson 13" Author="Vince Rizzo" Url="https://eternityradio.org/assets/spiritual_warfare_lesson_13.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="13" Summary=""></media>
+        <media Name="Lesson 14" Author="Vince Rizzo" Url="https://eternityradio.org/assets/spiritual_warfare_lesson_14.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="14" Summary=""></media>
+        <media Name="Lesson 15" Author="Vince Rizzo" Url="https://eternityradio.org/assets/spiritual_warfare_lesson_15.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="15" Summary=""></media>
+        <media Name="Lesson 16" Author="Vince Rizzo" Url="https://eternityradio.org/assets/spiritual_warfare_lesson_16.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="16" Summary=""></media>
+        <media Name="Lesson 17" Author="Vince Rizzo" Url="https://eternityradio.org/assets/spiritual_warfare_lesson_17.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="17" Summary=""></media>
+        <media Name="Lesson 18" Author="Vince Rizzo" Url="https://eternityradio.org/assets/spiritual_warfare_lesson_18.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="18" Summary=""></media>
+        <media Name="Lesson 19" Author="Vince Rizzo" Url="https://eternityradio.org/assets/spiritual_warfare_lesson_19.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="19" Summary=""></media>
+        <media Name="Lesson 20" Author="Vince Rizzo" Url="https://eternityradio.org/assets/spiritual_warfare_lesson_20.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="20" Summary=""></media>
+        <media Name="Lesson 21" Author="Vince Rizzo" Url="https://eternityradio.org/assets/spiritual_warfare_lesson_21.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="21" Summary=""></media>
+        <media Name="Lesson 22" Author="Vince Rizzo" Url="https://eternityradio.org/assets/spiritual_warfare_lesson_22.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="22" Summary=""></media>
+        <media Name="Lesson 23" Author="Vince Rizzo" Url="https://eternityradio.org/assets/spiritual_warfare_lesson_23.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="23" Summary=""></media>
+        <media Name="Lesson 24" Author="Vince Rizzo" Url="https://eternityradio.org/assets/spiritual_warfare_lesson_24.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="24" Summary=""></media>
+      </series>
+      <series Name="Power Principles" Author="Vince Rizzo" CoverImage="EternityRadioApp.Images.HarvestTime.png" Summary="" Sequence="11">
+        <document></document>
+        <media Name="Lesson 1" Author="Vince Rizzo" Url="https://eternityradio.org/assets/power_principles_lesson_1.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="1" Summary=""></media>
+        <media Name="Lesson 2" Author="Vince Rizzo" Url="https://eternityradio.org/assets/power_principles_lesson_2.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="2" Summary=""></media>
+        <media Name="Lesson 3" Author="Vince Rizzo" Url="https://eternityradio.org/assets/power_principles_lesson_3.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="3" Summary=""></media>
+        <media Name="Lesson 4" Author="Vince Rizzo" Url="https://eternityradio.org/assets/power_principles_lesson_4.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="4" Summary=""></media>
+        <media Name="Lesson 5" Author="Vince Rizzo" Url="https://eternityradio.org/assets/power_principles_lesson_5.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="5" Summary=""></media>
+        <media Name="Lesson 6" Author="Vince Rizzo" Url="https://eternityradio.org/assets/power_principles_lesson_6.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="6" Summary=""></media>
+        <media Name="Lesson 7" Author="Vince Rizzo" Url="https://eternityradio.org/assets/power_principles_lesson_7.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="7" Summary=""></media>
+        <media Name="Lesson 8" Author="Vince Rizzo" Url="https://eternityradio.org/assets/power_principles_lesson_8.mp3" CoverImage="EternityRadioApp.Images.HarvestTime.png" Sequence="8" Summary=""></media>
+      </series>
+    </category>
+    <category Name="Sundanese Language Resources" Author="Various" CoverImage="EternityRadioApp.Images.ISOM.jpg" Summary="downloadable MP3 training files from the International School of Missions, in both English and Sunda. Speakers include Jack Hayford, Dr. Reinhard Bonnke and Bayless Conley." Sequence="6">
+      <series Name="Foundations of the Faith A1" Author="Bayless Conley" CoverImage="EternityRadioApp.Images.ISOM.jpg" Summary="" Sequence="1">
+        <media Name="The Authority of the Bible and the Doctrine of the Trinity" Author="Bayless Conley" Url="https://eternityradio.org/assets/a1.1-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="1" Summary=""></media>
+        <media Name="The Deity and Mission of Jesus" Author="Bayless Conley" Url="https://eternityradio.org/assets/a1.2-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="2" Summary=""></media>
+        <media Name="Salvation, Heaven and Hell, and Christ's Return" Author="Bayless Conley" Url="https://eternityradio.org/assets/a1.3-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="3" Summary=""></media>
+        <media Name="The Person and Work of the Holy Spirit" Author="Bayless Conley" Url="https://eternityradio.org/assets/a1.4-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="4" Summary=""></media>
+        <media Name="Divine Healing" Author="Bayless Conley" Url="https://eternityradio.org/assets/a1.5-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="5" Summary=""></media>
+        <media Name="Church Ordinances" Author="Bayless Conley" Url="https://eternityradio.org/assets/a1.6-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="6" Summary=""></media>
+      </series>
+      <series Name="Supernatural Living A2" Author="Dr. A. L. Gill" CoverImage="EternityRadioApp.Images.ISOM.jpg" Summary="" Sequence="2">
+        <media Name="The Holy Spirit" Author="Dr. A. L. Gill" Url="https://eternityradio.org/assets/a2.1-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="1" Summary=""></media>
+        <media Name="Gifts of the Holy Spirit" Author="Dr. A. L. Gill" Url="https://eternityradio.org/assets/a2.2-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="2" Summary=""></media>
+        <media Name="The Vocal Gifts" Author="Dr. A. L. Gill" Url="https://eternityradio.org/assets/a2.3-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="3" Summary=""></media>
+        <media Name="The Revelation Gifts" Author="Dr. A. L. Gill" Url="https://eternityradio.org/assets/a2.4-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="4" Summary=""></media>
+        <media Name="The Power Gifts" Author="Dr. A. L. Gill" Url="https://eternityradio.org/assets/a2.5-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="5" Summary=""></media>
+        <media Name="The Gifts of Healing" Author="Dr. A. L. Gill" Url="https://eternityradio.org/assets/a2.6-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="6" Summary=""></media>
+        <media Name="Healing and The Great Commission" Author="Dr. A. L. Gill" Url="https://eternityradio.org/assets/a2.7-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="7" Summary=""></media>
+        <media Name="The Healing Power of God" Author="Dr. A. L. Gill" Url="https://eternityradio.org/assets/a2.8-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="8" Summary=""></media>
+        <media Name="Speaking Words of Healing" Author="Dr. A. L. Gill" Url="https://eternityradio.org/assets/a2.9-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="9" Summary=""></media>
+        <media Name="Impartation Through Laying on of Hands" Author="Dr. A. L. Gill" Url="https://eternityradio.org/assets/a2.10-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="10" Summary=""></media>
+      </series>
+      <series Name="New Testament Survey A3" Author="Dr. John Amstutz" CoverImage="EternityRadioApp.Images.ISOM.jpg" Summary="" Sequence="3">
+        <media Name="Introduction to the New Testament" Author="Dr. John Amstutz" Url="https://eternityradio.org/assets/a3.1-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="1" Summary=""></media>
+        <media Name="Matthew, Mark, Luke: Three Portraits of Jesus Christ" Author="Dr. John Amstutz" Url="https://eternityradio.org/assets/a3.2-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="2" Summary=""></media>
+        <media Name="John: A Fourth Portrait of Jesus Christ" Author="Dr. John Amstutz" Url="https://eternityradio.org/assets/a3.3-86-session-r1.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="3" Summary=""></media>
+        <media Name="Acts: The Expansion of the Gospel" Author="Dr. John Amstutz" Url="https://eternityradio.org/assets/a3.4-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="4" Summary=""></media>
+        <media Name="Romans: The Gospel of Grace" Author="Dr. John Amstutz" Url="https://eternityradio.org/assets/a3.5-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="5" Summary=""></media>
+        <media Name="1 and 2 Corinthians, Galations: Living the Gospel of Grace" Author="Dr. John Amstutz" Url="https://eternityradio.org/assets/a3.6-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="6" Summary=""></media>
+        <media Name="Ephesians, Phillipians, Colossians and Philemon: Letters from Prison" Author="Dr. John Amstutz" Url="https://eternityradio.org/assets/a3.7-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="7" Summary=""></media>
+        <media Name="1 and 2 Thessalonians: The Lord's Return; 1 and 2 Timothy, Titus: Leadership" Author="Dr. John Amstutz" Url="https://eternityradio.org/assets/a3.8-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="8" Summary=""></media>
+        <media Name="Hebrews - Jude: General Letters to Believers" Author="Dr. John Amstutz" Url="https://eternityradio.org/assets/a3.9-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="9" Summary=""></media>
+        <media Name="Revelation: The Consummation of All Things" Author="Dr. John Amstutz" Url="https://eternityradio.org/assets/a3.10-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="10" Summary=""></media>
+      </series>
+      <series Name="Praise and Worship A4" Author="Dr. LaMar Boschman" CoverImage="EternityRadioApp.Images.ISOM.jpg" Summary="" Sequence="4">
+        <media Name="Priority, Purpose, and Portrayal of Worship" Author="Dr. LaMar Boschman" Url="https://eternityradio.org/assets/a4.1-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="1" Summary=""></media>
+        <media Name="The Role of Music in the Kingdom of God" Author="Dr. LaMar Boschman" Url="https://eternityradio.org/assets/a4.2-86-session-r1.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="2" Summary=""></media>
+        <media Name="The Significance of the New Song" Author="Dr. LaMar Boschman" Url="https://eternityradio.org/assets/a4.3-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="3" Summary=""></media>
+        <media Name="Our Responsibility as Worshipers" Author="Dr. LaMar Boschman" Url="https://eternityradio.org/assets/a4.4-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="4" Summary=""></media>
+        <media Name="How to Become a Worshiper" Author="Dr. LaMar Boschman" Url="https://eternityradio.org/assets/a4.5-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="5" Summary=""></media>
+      </series>
+      <series Name="Power of Prayer B1" Author="Dr. Dick Eastman" CoverImage="EternityRadioApp.Images.ISOM.jpg" Summary="" Sequence="5">
+        <media Name="Its Threefold Potential" Author="Dr. Dick Eastman" Url="https://eternityradio.org/assets/b1.1-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="1" Summary=""></media>
+        <media Name="What Prayer Is" Author="Dr. Dick Eastman" Url="https://eternityradio.org/assets/b1.2-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="2" Summary=""></media>
+        <media Name="The Practice of Prayer, Part 1" Author="Dr. Dick Eastman" Url="https://eternityradio.org/assets/b1.3-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="3" Summary=""></media>
+        <media Name="The Practice of Prayer, Part 2" Author="Dr. Dick Eastman" Url="https://eternityradio.org/assets/b1.4-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="4" Summary=""></media>
+        <media Name="The Purpose of Prayer" Author="Dr. Dick Eastman" Url="https://eternityradio.org/assets/b1.5-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="5" Summary=""></media>
+      </series>
+      <series Name="Ministry of Helps B2" Author="Buddy Bell" CoverImage="EternityRadioApp.Images.ISOM.jpg" Summary="" Sequence="6">
+        <media Name="The Journey of a Servant" Author="Buddy Bell" Url="https://eternityradio.org/assets/b2.1-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="1" Summary=""></media>
+        <media Name="God Uses Both Stars and Candles" Author="Buddy Bell" Url="https://eternityradio.org/assets/b2.2-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="2" Summary=""></media>
+        <media Name="Fear Not Leadership, Organization and Structure, Part 1" Author="Buddy Bell" Url="https://eternityradio.org/assets/b2.3-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="3" Summary=""></media>
+        <media Name="Fear Not Leadership, Organization and Structure, Part 2" Author="Buddy Bell" Url="https://eternityradio.org/assets/b2.4-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="4" Summary=""></media>
+        <media Name="Becoming a Servant of Fire" Author="Buddy Bell" Url="https://eternityradio.org/assets/b2.5-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="5" Summary=""></media>
+      </series>
+      <series Name="Old Testament Survey B3" Author="Christopher Gornold-Smith" CoverImage="EternityRadioApp.Images.ISOM.jpg" Summary="" Sequence="7">
+        <media Name="Approaching the Old Testament" Author="Christopher Gornold-Smith" Url="https://eternityradio.org/assets/b3.1-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="1" Summary=""></media>
+        <media Name="The Order of Books and Creation" Author="Christopher Gornold-Smith" Url="https://eternityradio.org/assets/b3.2-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="2" Summary=""></media>
+        <media Name="The Image of God and the Fall" Author="Christopher Gornold-Smith" Url="https://eternityradio.org/assets/b3.3-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="3" Summary=""></media>
+        <media Name="Babel and Abraham: the Concepts of Covenant" Author="Christopher Gornold-Smith" Url="https://eternityradio.org/assets/b3.4-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="4" Summary=""></media>
+        <media Name="Abraham, Israel, Joseph, and Moses" Author="Christopher Gornold-Smith" Url="https://eternityradio.org/assets/b3.5-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="5" Summary=""></media>
+        <media Name="The Tabernacle Worship" Author="Christopher Gornold-Smith" Url="https://eternityradio.org/assets/b3.6-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="6" Summary=""></media>
+        <media Name="Joshua, Judges, and Ruth" Author="Christopher Gornold-Smith" Url="https://eternityradio.org/assets/b3.7-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="7" Summary=""></media>
+        <media Name="The Kings, David, Psalms, and Hebrew Poetry" Author="Christopher Gornold-Smith" Url="https://eternityradio.org/assets/b3.8-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="8" Summary=""></media>
+        <media Name="Wisdom Literature, Division, and Exile" Author="Christopher Gornold-Smith" Url="https://eternityradio.org/assets/b3.9-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="9" Summary=""></media>
+        <media Name="Babylonian Captivity, Return from Exile, and the Prophets" Author="Christopher Gornold-Smith" Url="https://eternityradio.org/assets/b3.10-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="10" Summary=""></media>
+      </series>
+      <series Name="Jesus Our Healer Today B5" Author="Bayless Conley" CoverImage="EternityRadioApp.Images.ISOM.jpg" Summary="" Sequence="8">
+        <media Name="God's Will and Healing" Author="Bayless Conley" Url="https://eternityradio.org/assets/b5.1-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="1" Summary=""></media>
+        <media Name="Healing in the Atonement" Author="Bayless Conley" Url="https://eternityradio.org/assets/b5.2-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="2" Summary=""></media>
+        <media Name="Full Salvation" Author="Bayless Conley" Url="https://eternityradio.org/assets/b5.3-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="3" Summary=""></media>
+        <media Name="Moses, the Serpent and Healing" Author="Bayless Conley" Url="https://eternityradio.org/assets/b5.4-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="4" Summary=""></media>
+        <media Name="The Mercy of Healing" Author="Bayless Conley" Url="https://eternityradio.org/assets/b5.5-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="5" Summary=""></media>
+      </series>
+      <series Name="Living by Faith B6" Author="Bill Winston" CoverImage="EternityRadioApp.Images.ISOM.jpg" Summary="" Sequence="9">
+        <media Name="Living by Faith, Part 1" Author="Bill Winston" Url="https://eternityradio.org/assets/b6.1-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="1" Summary=""></media>
+        <media Name="Living by Faith, Part 2" Author="Bill Winston" Url="https://eternityradio.org/assets/b6.2-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="2" Summary=""></media>
+      </series>
+      <series Name="Introduction C1" Author="Berin Gilfillan" CoverImage="EternityRadioApp.Images.ISOM.jpg" Summary="" Sequence="10">
+        <media Name="Mobilize to Multiply" Author="Berin Gilfillan" Url="https://eternityradio.org/assets/c1.1-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="1" Summary=""></media>
+      </series>
+      <series Name="Church-Based Training C2" Author="Dr. Stan DeKoven" CoverImage="EternityRadioApp.Images.ISOM.jpg" Summary="" Sequence="11">
+        <media Name="Model for Ministry Training" Author="Dr. Stan DeKoven" Url="https://eternityradio.org/assets/c2.1-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="1" Summary=""></media>
+        <media Name="The Goal and Objective of Educational Ministry" Author="Dr. Stan DeKoven" Url="https://eternityradio.org/assets/c2.2-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="2" Summary=""></media>
+        <media Name="Planning Your Institute" Author="Dr. Stan DeKoven" Url="https://eternityradio.org/assets/c2.3-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="3" Summary=""></media>
+      </series>
+      <series Name="Cell Groups C3" Author="Larry Stockstill" CoverImage="EternityRadioApp.Images.ISOM.jpg" Summary="" Sequence="12">
+        <media Name="Purposes of Cell Groups" Author="Larry Stockstill" Url="https://eternityradio.org/assets/c3.1-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="1" Summary=""></media>
+        <media Name="Evangelizing the Lost" Author="Larry Stockstill" Url="https://eternityradio.org/assets/c3.2-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="2" Summary=""></media>
+        <media Name="Raising Up Leaders" Author="Larry Stockstill" Url="https://eternityradio.org/assets/c3.3-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="3" Summary=""></media>
+        <media Name="The Principles of Multiplication" Author="Larry Stockstill" Url="https://eternityradio.org/assets/c3.4-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="4" Summary=""></media>
+        <media Name="Great Leaders in the Church" Author="Larry Stockstill" Url="https://eternityradio.org/assets/c3.5-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="5" Summary=""></media>
+      </series>
+      <series Name="Power Evangelism C4" Author="Dr. Reinhard Bonnke" CoverImage="EternityRadioApp.Images.ISOM.jpg" Summary="" Sequence="13">
+        <media Name="Fire Brand Evangelists" Author="Dr. Reinhard Bonnke" Url="https://eternityradio.org/assets/c4.1-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="1" Summary=""></media>
+        <media Name="The Power of the Holy Spirit" Author="Dr. Reinhard Bonnke" Url="https://eternityradio.org/assets/c4.2-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="2" Summary=""></media>
+        <media Name="Integrity" Author="Dr. Reinhard Bonnke" Url="https://eternityradio.org/assets/c4.3-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="3" Summary=""></media>
+        <media Name="The Great Commission" Author="Dr. Reinhard Bonnke" Url="https://eternityradio.org/assets/c4.4-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="4" Summary=""></media>
+        <media Name="Fire of the Holy Spirit" Author="Dr. Reinhard Bonnke" Url="https://eternityradio.org/assets/c4.5-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="5" Summary=""></media>
+      </series>
+      <series Name="Leaders Integrity C5" Author="Dr. Jack Hayford" CoverImage="EternityRadioApp.Images.ISOM.jpg" Summary="" Sequence="14">
+        <media Name="Integrity of Heart" Author="Dr. Jack Hayford" Url="https://eternityradio.org/assets/c5.1-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="1" Summary=""></media>
+        <media Name="A Forgiving Spirit" Author="Dr. Jack Hayford" Url="https://eternityradio.org/assets/c5.2-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="2" Summary=""></media>
+      </series>
+      <series Name="Leadership Vision C6" Author="Dr. David Shibley" CoverImage="EternityRadioApp.Images.ISOM.jpg" Summary="" Sequence="15">
+        <media Name="Embracing the Vision" Author="Dr. David Shibley" Url="https://eternityradio.org/assets/c6.1-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="1" Summary=""></media>
+        <media Name="Qualities of a Visionary" Author="Dr. David Shibley" Url="https://eternityradio.org/assets/c6.2-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="2" Summary=""></media>
+        <media Name="Focusing Your Vision" Author="Dr. David Shibley" Url="https://eternityradio.org/assets/c6.3-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="3" Summary=""></media>
+        <media Name="God's Vision and Your Vision" Author="Dr. David Shibley" Url="https://eternityradio.org/assets/c6.4-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="4" Summary=""></media>
+        <media Name="Funding the Vision" Author="Dr. David Shibley" Url="https://eternityradio.org/assets/c6.5-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="5" Summary=""></media>
+      </series>
+      <series Name="Church Planting C7" Author="Dr. Jim Feeney" CoverImage="EternityRadioApp.Images.ISOM.jpg" Summary="" Sequence="16">
+        <media Name="An Overview of Church Planting" Author="Dr. Jim Feeney" Url="https://eternityradio.org/assets/c7.1-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="1" Summary=""></media>
+        <media Name="The Local Church as a Ministry Training Center" Author="Dr. Jim Feeney" Url="https://eternityradio.org/assets/c7.2-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="2" Summary=""></media>
+        <media Name="Vocational Ministers in the Local Church" Author="Dr. Jim Feeney" Url="https://eternityradio.org/assets/c7.3-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="3" Summary=""></media>
+        <media Name="Identifying Church-Planting Teams" Author="Dr. Jim Feeney" Url="https://eternityradio.org/assets/c7.4-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="4" Summary=""></media>
+        <media Name="Preparing and Sending the Church-Planting Team" Author="Dr. Jim Feeney" Url="https://eternityradio.org/assets/c7.5-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="5" Summary=""></media>
+      </series>
+      <series Name="Being Led by the Spirit C8" Author="Bayless Conley" CoverImage="EternityRadioApp.Images.ISOM.jpg" Summary="" Sequence="17">
+        <media Name="Spirit Directed and Spirit Power" Author="Bayless Conley" Url="https://eternityradio.org/assets/c8.1-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="1" Summary=""></media>
+        <media Name="How God Leads Us Through Our Spirits" Author="Bayless Conley" Url="https://eternityradio.org/assets/c8.2-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="2" Summary=""></media>
+        <media Name="Direction in Difficult Times" Author="Bayless Conley" Url="https://eternityradio.org/assets/c8.3-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="3" Summary=""></media>
+        <media Name="Priorities of Life" Author="Bayless Conley" Url="https://eternityradio.org/assets/c8.4-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="4" Summary=""></media>
+        <media Name="Pitfalls and Dangers When Seeking for Guidance" Author="Bayless Conley" Url="https://eternityradio.org/assets/c8.5-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="5" Summary=""></media>
+      </series>
+      <series Name="Promise Keeper C9" Author="Dr. Ed Cole" CoverImage="EternityRadioApp.Images.ISOM.jpg" Summary="" Sequence="18">
+        <media Name="Promise Keeper" Author="Dr. Ed Cole" Url="https://eternityradio.org/assets/c9-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="1" Summary=""></media>
+      </series>
+      <series Name="How to Give an Altar Call C10" Author="Jim Cobrae" CoverImage="EternityRadioApp.Images.ISOM.jpg" Summary="" Sequence="19">
+        <media Name="How to Give an Altar Call" Author="Jim Cobrae" Url="https://eternityradio.org/assets/c10.1-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="1" Summary=""></media>
+      </series>
+      <series Name="Wilderness Mentalities D1" Author="Dr. Joyce Meyer" CoverImage="EternityRadioApp.Images.ISOM.jpg" Summary="" Sequence="20">
+        <media Name="Mindsets, Vision, and Responsibility" Author="Dr. Joyce Meyer" Url="https://eternityradio.org/assets/d1.1-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="1" Summary=""></media>
+        <media Name="Responsibility and Trials" Author="Dr. Joyce Meyer" Url="https://eternityradio.org/assets/d1.2-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="2" Summary=""></media>
+        <media Name="Grumbling and Impatience" Author="Dr. Joyce Meyer" Url="https://eternityradio.org/assets/d1.3-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="3" Summary=""></media>
+        <media Name="Impatience and the Victim Mentality" Author="Dr. Joyce Meyer" Url="https://eternityradio.org/assets/d1.4-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="4" Summary=""></media>
+        <media Name="The Victim Mentality and Self-pity" Author="Dr. Joyce Meyer" Url="https://eternityradio.org/assets/d1.5-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="5" Summary=""></media>
+        <media Name="Self-Worth" Author="Dr. Joyce Meyer" Url="https://eternityradio.org/assets/d1.6-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="6" Summary=""></media>
+        <media Name="Comparison, Stubbornness, and Rebellion" Author="Dr. Joyce Meyer" Url="https://eternityradio.org/assets/d1.7-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="7" Summary=""></media>
+      </series>
+      <series Name="Developing Leaders D2" Author="Brian Houston" CoverImage="EternityRadioApp.Images.ISOM.jpg" Summary="" Sequence="21">
+        <media Name="The Heart of a Leader" Author="Brian Houston" Url="https://eternityradio.org/assets/d2.1-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="1" Summary=""></media>
+        <media Name="Your Heart Determines the Course of Your Life" Author="Brian Houston" Url="https://eternityradio.org/assets/d2.2-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="2" Summary=""></media>
+        <media Name="Your Heart Determines Your Success in Life" Author="Brian Houston" Url="https://eternityradio.org/assets/d2.3-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="3" Summary=""></media>
+        <media Name="Leaders or Followers" Author="Brian Houston" Url="https://eternityradio.org/assets/d2.4-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="4" Summary=""></media>
+        <media Name="Pitfalls of Visionaries" Author="Brian Houston" Url="https://eternityradio.org/assets/d2.5-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="5" Summary=""></media>
+      </series>
+      <series Name="Cell Group Leaders D3" Author="Billy Hornsby" CoverImage="EternityRadioApp.Images.ISOM.jpg" Summary="" Sequence="22">
+        <media Name="Effectiveness" Author="Billy Hornsby" Url="https://eternityradio.org/assets/d3-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="1" Summary=""></media>
+      </series>
+      <series Name="Reconciliation D4" Author="Dr. A. R. Bernard" CoverImage="EternityRadioApp.Images.ISOM.jpg" Summary="" Sequence="23">
+        <media Name="Introduction" Author="Dr. A. R. Bernard" Url="https://eternityradio.org/assets/d4.1-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="1" Summary=""></media>
+        <media Name="Origins and Destiny" Author="Dr. A. R. Bernard" Url="https://eternityradio.org/assets/d4.2-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="2" Summary=""></media>
+        <media Name="Fear, The Strategy of the Enemy" Author="Dr. A. R. Bernard" Url="https://eternityradio.org/assets/d4.3-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="3" Summary=""></media>
+        <media Name="Living a Reconciled Life" Author="Dr. A. R. Bernard" Url="https://eternityradio.org/assets/d4.4-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="4" Summary=""></media>
+      </series>
+      <series Name="Personal Evangelism D5" Author="Ray Comfort" CoverImage="EternityRadioApp.Images.ISOM.jpg" Summary="" Sequence="24">
+        <media Name="Hell's Best Kept Secret" Author="Ray Comfort" Url="https://eternityradio.org/assets/d5.1-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="1" Summary=""></media>
+        <media Name="Atheism" Author="Ray Comfort" Url="https://eternityradio.org/assets/d5.2-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="2" Summary=""></media>
+        <media Name="Militant Evangelism" Author="Ray Comfort" Url="https://eternityradio.org/assets/d5.3-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="3" Summary=""></media>
+        <media Name="True and False Conversion" Author="Ray Comfort" Url="https://eternityradio.org/assets/d5.4-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="4" Summary=""></media>
+        <media Name="How to Get on Fire for God" Author="Ray Comfort" Url="https://eternityradio.org/assets/d5.5-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="5" Summary=""></media>
+      </series>
+      <series Name="Spiritual Warfare D6" Author="Dean Sherman" CoverImage="EternityRadioApp.Images.ISOM.jpg" Summary="" Sequence="25">
+        <media Name="The Biblical Foundation" Author="Dean Sherman" Url="https://eternityradio.org/assets/d6.1-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="1" Summary=""></media>
+        <media Name="Understanding Spiritual Warfare" Author="Dean Sherman" Url="https://eternityradio.org/assets/d6.2-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="2" Summary=""></media>
+        <media Name="Warfare Prayer and the Gates of Hell" Author="Dean Sherman" Url="https://eternityradio.org/assets/d6.3-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="3" Summary=""></media>
+        <media Name="Crashing the Gates of Hell" Author="Dean Sherman" Url="https://eternityradio.org/assets/d6.4-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="4" Summary=""></media>
+        <media Name="Exercising Authority in Society" Author="Dean Sherman" Url="https://eternityradio.org/assets/d6.5-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="5" Summary=""></media>
+      </series>
+      <series Name="Christ Connection E1" Author="Dr. T. L. Osborn" CoverImage="EternityRadioApp.Images.ISOM.jpg" Summary="" Sequence="26">
+        <media Name="Jesus Our Model" Author="Dr. T. L. Osborn" Url="https://eternityradio.org/assets/e1.1-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="1" Summary=""></media>
+        <media Name="Jesus Our Inspiration" Author="Dr. T. L. Osborn" Url="https://eternityradio.org/assets/e1.2-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="2" Summary=""></media>
+        <media Name="Our Response" Author="Dr. T. L. Osborn" Url="https://eternityradio.org/assets/e1.3-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="3" Summary=""></media>
+        <media Name="Action" Author="Dr. T. L. Osborn" Url="https://eternityradio.org/assets/e1.4-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="4" Summary=""></media>
+        <media Name="Our Credibility" Author="Dr. T. L. Osborn" Url="https://eternityradio.org/assets/e1.5-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="5" Summary=""></media>
+        <media Name="Our Legality" Author="Dr. T. L. Osborn" Url="https://eternityradio.org/assets/e1.6-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="6" Summary=""></media>
+        <media Name="Experience" Author="Dr. T. L. Osborn" Url="https://eternityradio.org/assets/e1.7-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="7" Summary=""></media>
+      </series>
+      <series Name="Living to Give E2" Author="Wayne Myers" CoverImage="EternityRadioApp.Images.ISOM.jpg" Summary="" Sequence="27">
+        <media Name="The Maximum Lifestyle" Author="Wayne Myers" Url="https://eternityradio.org/assets/e2.1-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="1" Summary=""></media>
+        <media Name="How to Initiate a Lifestyle of Giving" Author="Wayne Myers" Url="https://eternityradio.org/assets/e2.2-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="2" Summary=""></media>
+        <media Name="Exchanging Earthly Possessions" Author="Wayne Myers" Url="https://eternityradio.org/assets/e2.3-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="3" Summary=""></media>
+        <media Name="Living and Giving Beyond the Possible" Author="Wayne Myers" Url="https://eternityradio.org/assets/e2.4-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="4" Summary=""></media>
+        <media Name="Can God? God Can!" Author="Wayne Myers" Url="https://eternityradio.org/assets/e2.5-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="5" Summary=""></media>
+      </series>
+      <series Name="Biblical Eldership E5" Author="Dick Benjamin" CoverImage="EternityRadioApp.Images.ISOM.jpg" Summary="" Sequence="28">
+        <media Name="What is a Biblical Elder?" Author="Dick Benjamin" Url="https://eternityradio.org/assets/e5.1-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="1" Summary=""></media>
+        <media Name="The Function of Elders" Author="Dick Benjamin" Url="https://eternityradio.org/assets/e5.2-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="2" Summary=""></media>
+        <media Name="Qualifications for Elders" Author="Dick Benjamin" Url="https://eternityradio.org/assets/e5.3-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="3" Summary=""></media>
+        <media Name="The Fivefold Ministry, Part 1" Author="Dick Benjamin" Url="https://eternityradio.org/assets/e5.4-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="4" Summary=""></media>
+        <media Name="The Fivefold Ministry, Part 2" Author="Dick Benjamin" Url="https://eternityradio.org/assets/e5.5-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="5" Summary=""></media>
+      </series>
+      <series Name="Reaching a New Generation E7" Author="Willie George" CoverImage="EternityRadioApp.Images.ISOM.jpg" Summary="" Sequence="29">
+        <media Name="What the Bible Says About Children's Ministry" Author="Willie George" Url="https://eternityradio.org/assets/e7.1-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="1" Summary=""></media>
+        <media Name="The Laws of Hospitality" Author="Willie George" Url="https://eternityradio.org/assets/e7.2-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="2" Summary=""></media>
+        <media Name="The Last Days Harvest" Author="Willie George" Url="https://eternityradio.org/assets/e7.3-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="3" Summary=""></media>
+        <media Name="Preaching to Children" Author="Willie George" Url="https://eternityradio.org/assets/e7.4-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="4" Summary=""></media>
+        <media Name="Pastor-Driven Youth Ministry" Author="Willie George" Url="https://eternityradio.org/assets/e7.5-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="5" Summary=""></media>
+        <media Name="How to Hold a Child's Attention" Author="Willie George" Url="https://eternityradio.org/assets/e7.6-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="6" Summary=""></media>
+        <media Name="How to be an Excellent Storyteller" Author="Willie George" Url="https://eternityradio.org/assets/e7.7-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="7" Summary=""></media>
+      </series>
+      <series Name="Managing for Tomorrow E8" Author="Jim Wideman" CoverImage="EternityRadioApp.Images.ISOM.jpg" Summary="" Sequence="30">
+        <media Name="Using Puppets in Children's Ministry" Author="Jim Wideman" Url="https://eternityradio.org/assets/e8.1-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="1" Summary=""></media>
+        <media Name="How to be a Problem Solver" Author="Jim Wideman" Url="https://eternityradio.org/assets/e8.2-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="2" Summary=""></media>
+        <media Name="Organizing Children's Ministry for Growth" Author="Jim Wideman" Url="https://eternityradio.org/assets/e8.3-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="3" Summary=""></media>
+        <media Name="How to Get Others to Help You" Author="Jim Wideman" Url="https://eternityradio.org/assets/e8.4-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="4" Summary=""></media>
+      </series>
+      <series Name="Ministering to Youth E9" Author="Blaine Bartel" CoverImage="EternityRadioApp.Images.ISOM.jpg" Summary="" Sequence="31">
+        <media Name="Setting the Vision for Youth Ministry" Author="Blaine Bartel" Url="https://eternityradio.org/assets/e9.1-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="1" Summary=""></media>
+        <media Name="Leading Leaders to Peak Performance" Author="Blaine Bartel" Url="https://eternityradio.org/assets/e9.2-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="2" Summary=""></media>
+        <media Name="Effectively Communicating to Young People" Author="Blaine Bartel" Url="https://eternityradio.org/assets/e9.3-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="3" Summary=""></media>
+        <media Name="Planning an Effective Youth Ministry" Author="Blaine Bartel" Url="https://eternityradio.org/assets/e9.4-86-session.mp3" CoverImage="EternityRadioApp.Images.ISOM.jpg" Sequence="4" Summary=""></media>
+      </series>
+    </category>
+  </download>
+</content>

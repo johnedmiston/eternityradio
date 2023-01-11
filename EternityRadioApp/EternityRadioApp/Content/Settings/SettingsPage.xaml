@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:EternityRadioApp"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:views="clr-namespace:EternityRadioApp.Content.Settings"
+    x:Class="EternityRadioApp.Content.Settings.SettingsPage"
+    Title="Craft Your Experience"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    ios:Page.UseSafeArea="true"
+    Shell.PresentationMode="ModalAnimated"
+    >
+
+    <ContentPage.BindingContext>
+        <views:SettingsViewModel x:Name="vm" />
+    </ContentPage.BindingContext>
+
+    <ContentPage.Resources>
+        <ControlTemplate x:Key="ThemeRadioTemplate">
+            <Frame
+                          BorderColor="{StaticResource NeutralLight}"
+                          BackgroundColor="{StaticResource NeutralLight}"
+                          HasShadow="False"
+                          HeightRequest="100"
+                          WidthRequest="100"
+                          HorizontalOptions="Start"
+                          VerticalOptions="Start"
+                          Padding="0">
+
+                <VisualStateManager.VisualStateGroups>
+                    <VisualStateGroupList>
+                        <VisualStateGroup
+                                        x:Name="CheckedStates">
+
+                            <VisualState
+                                            x:Name="Checked">
+                                <VisualState.Setters>
+                                    <Setter
+                                                  Property="BorderColor"
+                                                  Value="{StaticResource ThemePrimary}" />
+                                    <Setter
+                                                  TargetName="Check"
+                                                  Property="Opacity"
+                                                  Value="1" />
+                                </VisualState.Setters>
+                            </VisualState>
+
+                            <VisualState
+                                            x:Name="Unchecked">
+                                <VisualState.Setters>
+                                    <Setter
+                                                    Property="BackgroundColor"
+                                                    Value="{StaticResource NeutralLight}" />
+                                    <Setter
+                                                    Property="BorderColor"
+                                                    Value="#f3f2f1" />
+                                    <Setter
+                                                    TargetName="Check"
+                                                    Property="Opacity"
+                                                    Value="0" />
+                                </VisualState.Setters>
+                            </VisualState>
+
+                        </VisualStateGroup>
+                    </VisualStateGroupList>
+                </VisualStateManager.VisualStateGroups>
+
+                <Grid
+                                Margin="4"
+                                WidthRequest="100">
+                    <Grid
+                                      WidthRequest="18"
+                                      HeightRequest="18"
+                                      HorizontalOptions="End"
+                                      VerticalOptions="Start">
+                        <Ellipse
+                                            Stroke="{StaticResource DarkBrush}"
+                                            WidthRequest="16"
+                                            HeightRequest="16"
+                                            StrokeThickness="0.5"
+                                            VerticalOptions="Center"
+                                            HorizontalOptions="Center"
+                                            Fill="White" />
+                        <Ellipse
+                                            x:Name="Check"
+                                            WidthRequest="8"
+                                            HeightRequest="8"
+                                            Stroke="{StaticResource ThemePrimaryBrush}"
+                                            Fill="{StaticResource ThemePrimaryBrush}"
+                                            VerticalOptions="Center"
+                                            HorizontalOptions="Center" />
+                    </Grid>
+                    <ContentPresenter></ContentPresenter>
+                </Grid>
+            </Frame>
+        </ControlTemplate>
+
+        
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <StackLayout Padding="20">
+            <Grid ColumnDefinitions="44,*">
+                
+
+                <Label Grid.Column="0"
+                       Grid.ColumnSpan="2"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Fill"
+                       HorizontalTextAlignment="Center"
+                       Style="{StaticResource TextHeadline}"
+                       TextColor="{StaticResource ThemePrimary}"
+                       Text="Craft Your Experience" />
+
+                <ImageButton
+                    Aspect="AspectFit"
+                    VerticalOptions="Center"
+                    Grid.Column="0"
+                    Padding="5"
+                    Clicked="Handle_CloseClicked">
+                    <ImageButton.Source>
+                        <FontImageSource
+                            FontFamily="FontAwesome"
+                            Glyph="{x:Static local:IconFont.Plus}"
+                            Color="{StaticResource ThemePrimary}" />
+                    </ImageButton.Source>
+                </ImageButton>
+            </Grid>
+
+            <!-- Display Settings -->
+
+            <Label Style="{StaticResource TextTitle}" Text="Display Settings"/>
+
+            <StackLayout Orientation="Horizontal"
+                         RadioButtonGroup.GroupName="AppTheme"
+                         RadioButtonGroup.SelectedValue="{Binding SelectedTheme}">
+                <StackLayout.Resources>
+                    <Style TargetType="RadioButton">
+                        <Setter Property="ControlTemplate"
+                    Value="{StaticResource ThemeRadioTemplate}"/>
+                    </Style>
+                </StackLayout.Resources>
+                <RadioButton Value="{x:Static OSAppTheme.Unspecified}"
+                             CheckedChanged="RadioButton_CheckedChanged"
+                             >
+                    <RadioButton.Content>
+                        <Grid RowDefinitions="4*,1*">
+                            <Image
+                                VerticalOptions="Center"
+                                HorizontalOptions="Center"
+                                Source="{FontImage
+                                FontFamily=FontAwesome,
+                                Glyph={x:Static local:IconFont.Mobile},
+                                Color={StaticResource NeutralDark},
+                                Size=42}"/>
+                            <Label
+                                Text="Default"
+                                VerticalOptions="Center"
+                                HorizontalOptions="Center"
+                                Grid.Row="1"/>
+                        </Grid>
+                    </RadioButton.Content>
+                </RadioButton>
+                <RadioButton Value="{x:Static OSAppTheme.Dark}"
+                             CheckedChanged="RadioButton_CheckedChanged">
+                    <RadioButton.Content>
+                        <Grid RowDefinitions="4*,1*">
+                            <Image
+                                VerticalOptions="Center"
+                                HorizontalOptions="Center"
+                                Source="{FontImage
+                                FontFamily=FontAwesome,
+                                Glyph={x:Static local:IconFont.Lightbulb},
+                                Color=Black,
+                                Size=42}"/>
+                            <Label
+                                Text="Dark"
+                                VerticalOptions="Center"
+                                HorizontalOptions="Center"
+                                Grid.Row="1"/>
+                        </Grid>
+                    </RadioButton.Content>
+                </RadioButton>
+                <RadioButton Value="{x:Static OSAppTheme.Light}"
+                             CheckedChanged="RadioButton_CheckedChanged"
+                             >
+                    <RadioButton.Content>
+                        <Grid RowDefinitions="4*,1*">
+                            <Image
+                                VerticalOptions="Center"
+                                HorizontalOptions="Center"
+                                Source="{FontImage
+                                FontFamily=FontAwesome,
+                                Glyph={x:Static local:IconFont.Lightbulb},
+                                Color=White,
+                                Size=42}"/>
+                            <Label
+                                Text="Light"
+                                VerticalOptions="Center"
+                                HorizontalOptions="Center"
+                                Grid.Row="1"/>
+                        </Grid>
+                    </RadioButton.Content>
+                </RadioButton>
+            </StackLayout>
+
+            <!-- Visual -->
+
+            <Label Margin="0,15,0,0" Style="{StaticResource TextTitle}" Text="Visual"/>
+
+            <StackLayout RadioButtonGroup.GroupName="VisualStyle" Spacing="0">
+                <RadioButton Content="Default"/>
+                <RadioButton Content="Material"/>
+            </StackLayout>
+
+            <Label Margin="0,15,0,0"
+                   Style="{StaticResource TextTitle}"
+                   Text="Navigation"/>
+            <FlexLayout Direction="Row"
+                        Wrap="Wrap">
+                <Button
+                    BackgroundColor="{Binding UseFlyout,
+                        Converter={StaticResource IndexToColorConverter},
+                        ConverterParameter='White;ThemePrimary'}"
+                    TextColor="{Binding UseFlyout,
+                        Converter={StaticResource IndexToColorConverter},
+                        ConverterParameter='ThemePrimary;White'}"
+                    Text="Flyout"
+                    Command="{Binding ChangeNavigationCommand}"
+                    CommandParameter="flyout"
+                    FlexLayout.Basis="50%"
+                    BorderColor="{StaticResource ThemePrimary}"
+                    BorderWidth="1"
+                    CornerRadius="0" />
+                <Button
+                    BackgroundColor="{Binding UseTabs,
+                        Converter={StaticResource IndexToColorConverter},
+                        ConverterParameter='White;ThemePrimary'}"
+                    TextColor="{Binding UseTabs,
+                        Converter={StaticResource IndexToColorConverter},
+                        ConverterParameter='ThemePrimary;White'}"
+                    Text="Bottom Tabs"
+                    Command="{Binding ChangeNavigationCommand}"
+                    CommandParameter="tabs"
+                    BorderColor="{StaticResource ThemePrimary}"
+                    BorderWidth="1"
+                    FlexLayout.Basis="50%"
+                    CornerRadius="0" />
+            </FlexLayout>
+
+        </StackLayout>
+    </ScrollView>
+
+
+</ContentPage>

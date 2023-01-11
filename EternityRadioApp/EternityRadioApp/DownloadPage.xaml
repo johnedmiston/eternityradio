@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:pv="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView" 
+             xmlns:vm="clr-namespace:EternityRadioApp.ViewModel"
+             Title=""
+             xmlns:local="clr-namespace:EternityRadioApp"
+             Shell.ForegroundColor="White"
+             Shell.BackgroundColor="{StaticResource ThemePrimary}"
+             Shell.NavBarIsVisible="False"
+             Shell.TabBarIsVisible="False"
+            
+             mc:Ignorable="d" NavigationPage.HasNavigationBar="False"
+             x:Class="EternityRadioApp.DownloadPage">
+
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="88"/>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <pv:PancakeView  Grid.Row="1"  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <pv:PancakeView.Shadow>
+            <pv:DropShadow Color="#000000" Offset="10,10" />
+        </pv:PancakeView.Shadow>
+        <pv:PancakeView.BackgroundGradientStops>
+            <pv:GradientStopCollection>
+                <pv:GradientStop Color="#E7EDF8" Offset="0" />
+                <pv:GradientStop Color="#E3E7EE" Offset="1" />
+            </pv:GradientStopCollection>
+        </pv:PancakeView.BackgroundGradientStops>
+        <Grid RowSpacing="30" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+             
+            </Grid.RowDefinitions>
+            <CollectionView x:Name="SeriesContent"  ItemsSource="{Binding Series}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
+                            SelectionMode="Single" SelectionChanged="SeriesContent_SelectionChanged"  SelectedItem="{Binding SelectedSeries}">
+               
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Vertical" ItemSpacing="30"/>
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid  Margin="10,0,0,10" HorizontalOptions="FillAndExpand"  VerticalOptions="End">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                         
+                            </Grid.ColumnDefinitions>
+
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup Name="CommonStates">
+                                    <VisualState Name="Normal" />
+                                    <VisualState Name="Selected">
+                                        <VisualState.Setters>
+                                            <Setter Property="BackgroundColor" Value="Transparent" />
+                                        </VisualState.Setters>
+                                    </VisualState>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <Frame IsClippedToBounds="True"
+                    HasShadow="True"
+                    Padding="0"
+                    BackgroundColor="White" >
+                                <Frame.Margin>
+                                    <OnPlatform x:TypeArguments="Thickness"
+                            Android="10"
+                            iOS="10"/>
+                                </Frame.Margin>
+
+                                <StackLayout HorizontalOptions="FillAndExpand" Orientation="Vertical">
+                                    <Image  Source="{Binding ImageSource}" Aspect="Fill" HeightRequest="250" />
+                                    <StackLayout HorizontalOptions="FillAndExpand" Orientation="Vertical" Padding="15">
+                                        <Label>
+                                        <Label.FormattedText>
+                                                <FormattedString>
+                                                <Span FontFamily="FontAwesome" Text="{Binding Source={x:Static local:IconFont.LayerGroup }}"/>
+                                                 <Span FontSize="14" Text=" SERIES"></Span>
+                                            </FormattedString>
+                                        </Label.FormattedText> 
+                                        </Label>
+                                        <Label TextColor="#222" FontSize = "25" Text="{Binding Name}"/>
+                                        <Label FontSize="18" Text="{Binding Summary}" />
+                                         <StackLayout Orientation="Horizontal" HorizontalOptions="Fill" Margin="0,10">
+
+                                            <Label Text="{Binding Author}" FontSize = "16"  FontAttributes="Bold"/>
+                                            <Label Text="{Binding Items}" HorizontalOptions="EndAndExpand" FontSize="Small" ></Label>
+
+                                        </StackLayout>
+
+                                        <!--<Button Margin="0,25,0,0" Text="BUTTON" TextColor="White" BackgroundColor="#0097e6"/>-->
+                                    </StackLayout>
+
+                                </StackLayout>
+                            </Frame>
+                            <!-- <StackLayout BackgroundColor="#F7F9FC" VerticalOptions="Center" Margin="20,0,0,20">
+                                <Image Margin="0,0,0,0" WidthRequest="400" HeightRequest="300" 
+                                       Source="{Binding ImageSource}" />
+
+                                <Label Margin="20,0" Text="{Binding Title}" TextColor="Black" FontSize="24"/>
+                                <Label Margin="20,0" Padding="0,0,0,20" Text="{Binding Artist}" TextColor="Black" FontSize="16" Opacity="0.5"/>
+                                
+                            </StackLayout>
+                            <pv:PancakeView  HeightRequest="40" WidthRequest="40" CornerRadius="20" HorizontalOptions="End" VerticalOptions="End" Margin="0,0,0,10"
+                                            >
+                                <pv:PancakeView.Shadow>
+                                    <pv:DropShadow Color="#000000" Offset="10,10" />
+                                </pv:PancakeView.Shadow>
+                                <pv:PancakeView.BackgroundGradientStops>
+                                    <pv:GradientStopCollection>
+                                        <pv:GradientStop Color="#E3E7EE" Offset="0" />
+                                        <pv:GradientStop Color="#FBFBFB" Offset="1" />
+                                    </pv:GradientStopCollection>
+                                </pv:PancakeView.BackgroundGradientStops>
+                                <Image Source="playBlack.png" WidthRequest="10" HeightRequest="12" HorizontalOptions="Center" VerticalOptions="Center" />
+                            </pv:PancakeView> -->
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Grid>
+    </pv:PancakeView>
+    <!-- FAKE NAVIGATIONBAR -->
+    <FlexLayout 
+            x:Name="FakeNavBar"
+            BackgroundColor="{StaticResource ThemePrimary}"
+            Direction="Row"
+            Opacity="1"
+            Padding="15,42,15,15">
+
+        <ImageButton
+                FlexLayout.Shrink="0" Command="{Binding BackCommand}">
+            <ImageButton.Source>
+                <FontImageSource
+                        FontFamily="FontAwesome"
+                        Glyph="{x:Static local:IconFont.CircleArrowLeft}"
+                        Color="{StaticResource White}" />
+            </ImageButton.Source>
+        </ImageButton>
+        <Label
+                Text="{Binding Category}"
+                FontSize="Title"
+                Margin="10,0"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"
+                TextColor="{StaticResource White}"
+                LineBreakMode="TailTruncation"
+                FlexLayout.AlignSelf="Center"
+                FlexLayout.Grow="1" />
+
+        <ImageButton Margin="15,0,0,0" FlexLayout.Shrink="0">
+            <ImageButton.Source>
+                <FontImageSource
+                        FontFamily="FontAwesome"
+                        Glyph="{x:Static local:IconFont.LayerGroup}"
+                        Color="{StaticResource White}" />
+            </ImageButton.Source>
+        </ImageButton>
+    </FlexLayout>
+    </Grid>
+</ContentPage>

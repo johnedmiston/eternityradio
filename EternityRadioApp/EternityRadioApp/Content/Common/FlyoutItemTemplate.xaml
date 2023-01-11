@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Grid xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EternityRadioApp.Content.Common.FlyoutItemTemplate"
+                ColumnDefinitions="20,*"
+                  Padding="20,10,0,10"
+                  ColumnSpacing="20"
+                  >
+
+    <Image Grid.Column="0" 
+                       HorizontalOptions="End"
+                       VerticalOptions="Center"                       
+                       Source="{Binding Icon}"/>
+    <Label Grid.Column="1" 
+                       VerticalOptions="Center"
+                       FontSize="17"
+           TextColor="Black"
+                       Text="{Binding Title}"/>
+
+</Grid>

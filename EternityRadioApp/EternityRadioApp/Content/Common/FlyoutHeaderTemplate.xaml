@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Grid
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:local="clr-namespace:EternityRadioApp"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="EternityRadioApp.Content.Common.FlyoutHeaderTemplate"
+    Padding="20,66,0,40"
+    HeightRequest="100"
+    Background="{StaticResource PrimaryGradient}"
+>
+    
+    <Image Source="xamarin-forms-ui"
+           Grid.ColumnSpan="2"
+           VerticalOptions="Start"
+           HorizontalOptions="Center"
+           />
+
+</Grid>
