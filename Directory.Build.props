@@ -1,26 +1,5 @@
 ﻿<Project>
   <PropertyGroup>
-    <Copyright>Copyright (c) Baseflow</Copyright>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/Baseflow/XamarinMediaManager</PackageProjectUrl>
-    <PackageIconUrl>https://raw.githubusercontent.com/Baseflow/XamarinMediaManager/develop/icon.png</PackageIconUrl>
-    <!--<PackageIcon>icon.png</PackageIcon>
-    <PackageIconFullPath>$(MSBuildThisFileDirectory)icon.png</PackageIconFullPath>-->
-    <Authors>Martijn van Dijk</Authors>
-    <Owners>Martijn van Dijk</Owners>
-    <PackageTags>xamarin, android, plugin, MediaManager, media, audio, video</PackageTags>
-    <PackageReleaseNotes>https://github.com/Baseflow/XamarinMediaManager/releases</PackageReleaseNotes>
-    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <NeutralLanguage>en-US</NeutralLanguage>
-    <MinClientVersion>2.14</MinClientVersion>
-
-    <PublishRepositoryUrl>true</PublishRepositoryUrl>
-    <RepositoryUrl>https://github.com/Baseflow/XamarinMediaManager</RepositoryUrl>
-    <RepositoryType>git</RepositoryType>
-    <Product>$(AssemblyName) ($(TargetFramework))</Product>
-    <Version>1.1.1</Version>
-
-    <!--<Nullable>enable</Nullable>-->
     <ImplicitUsings>enable</ImplicitUsings>
     <LangVersion>10.0</LangVersion>
     <NoWarn>$(NoWarn);1591;1701;1702;1705;VSX1000;CS0109;CS0108;CS0618;CS0114;NU1603</NoWarn>
@@ -37,7 +16,6 @@
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
-    <!--<SymbolPackageFormat>snupkg</SymbolPackageFormat>-->
     <IncludeSymbols>true</IncludeSymbols>
     <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
@@ -59,11 +37,6 @@
     <DebugType>full</DebugType>
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
-
-  <ItemGroup Condition="'$(IsLibraryProject)' == 'true'">
-    <None Include="$(MSBuildThisFileDirectory)\LICENSE" Pack="true" PackagePath="\" />
-    <None Include="$(MSBuildThisFileDirectory)\icon.png" Pack="true" PackagePath="\" />
-  </ItemGroup>
 
   <ItemGroup Condition="'$(IsTestProject)' != 'true' and '$(SourceLinkEnabled)' != 'false' and '$(IsLibraryProject)' == 'true'">
     <PackageReference Include="SourceLink.Create.CommandLine" Version="2.8.3" PrivateAssets="All" />
