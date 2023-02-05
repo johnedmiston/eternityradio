@@ -16,12 +16,13 @@
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <TargetFrameworkVersion>v11.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v12.0</TargetFrameworkVersion>
     <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
     <AndroidUseAapt2>true</AndroidUseAapt2>
     <AndroidHttpClientHandlerType>Xamarin.Android.Net.AndroidClientHandler</AndroidHttpClientHandlerType>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <AndroidDexTool>d8</AndroidDexTool>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -58,7 +59,7 @@
     <AndroidKeyStore>false</AndroidKeyStore>
     <AndroidSigningKeyStore>C:\Users\tomjo\AppData\Local\Xamarin\Mono for Android\Keystore\Thomas Jolin\Thomas Jolin.keystore</AndroidSigningKeyStore>
     <AndroidSigningStorePass>Xfce6024!</AndroidSigningStorePass>
-    <AndroidPackageFormat>aab</AndroidPackageFormat>
+    <AndroidPackageFormat>apk</AndroidPackageFormat>
   </PropertyGroup>
   <PropertyGroup Label="MultilingualAppToolkit">
     <MultilingualAppToolkitVersion>4.0</MultilingualAppToolkitVersion>
@@ -81,9 +82,6 @@
     </PackageReference>
     <PackageReference Include="NLog">
       <Version>5.0.5</Version>
-    </PackageReference>
-    <PackageReference Include="Plugin.MediaManager.Forms">
-      <Version>1.1.1</Version>
     </PackageReference>
     <PackageReference Include="Xamanimation">
       <Version>1.3.0</Version>
@@ -438,6 +436,14 @@
     <ProjectReference Include="..\EternityRadioApp\EternityRadioApp.csproj">
       <Project>{B55927DE-4488-430E-A654-B5504B80CD5A}</Project>
       <Name>EternityRadioApp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MediaManager.Forms\MediaManager.Forms.csproj">
+      <Project>{a261203e-cd72-4f1f-a08d-d45d3b2fe865}</Project>
+      <Name>MediaManager.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MediaManager\MediaManager.csproj">
+      <Project>{0fb75c70-813b-4644-a363-fbb4404f15c9}</Project>
+      <Name>MediaManager</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -840,6 +846,9 @@
   <ItemGroup>
     <Folder Include="Resources\values-so\" />
     <Folder Include="Resources\values-su-rLatn\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LICENSE" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\Multilingual App Toolkit\Microsoft.Multilingual.Xamarin.Android.targets" Label="MultilingualAppToolkit" Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\Multilingual App Toolkit\v$(MultilingualAppToolkitVersion)\Microsoft.Multilingual.Xamarin.Android.targets')" />
