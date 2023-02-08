@@ -70,6 +70,7 @@ namespace EternityRadioApp.Droid
            // ActivityCompat.RequestPermissions((Android.App.Activity)this, new String[] { Manifest.Permission.WriteExternalStorage }, 1234);
 
 
+            /*
 
             if (ContextCompat.CheckSelfPermission(this, Manifest.Permission.WriteExternalStorage) == (int)Permission.Granted)
             {
@@ -80,7 +81,7 @@ namespace EternityRadioApp.Droid
                 ActivityCompat.RequestPermissions(this, new String[] { Manifest.Permission.WriteExternalStorage }, 1234);
 
                 // Camera permission is not granted. If necessary display rationale & request.
-            }
+            }*/
 
             Repository.DownloadPath = GetExternalFilesDir(Android.OS.Environment.DirectoryMusic).AbsolutePath;
            // Repository.DownloadPath = Android.OS.Environment.GetExternalStoragePublicDirectory(Android.OS.Environment.DirectoryDownloads).AbsolutePath;

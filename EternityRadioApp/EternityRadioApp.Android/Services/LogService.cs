@@ -23,7 +23,8 @@ namespace EternityRadioApp.Droid
             try
             {
      
-                ActivityCompat.RequestPermissions((Android.App.Activity)activity, new String[] { Manifest.Permission.WriteExternalStorage }, 1234);
+                /*
+                ActivityCompat.RequestPermissions((Android.App.Activity)activity, new String[] { Manifest.Permission.WriteExternalStorage }, 1234);*/
                 if (Device.RuntimePlatform == Device.iOS)
                     resourcePrefix = "EternityRadioApp.iOS";
                 else if (Device.RuntimePlatform == Device.Android)

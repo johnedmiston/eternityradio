@@ -99,6 +99,7 @@ namespace EternityRadioApp.Droid
             bool isWriteable = Android.OS.Environment.MediaMounted.Equals(Android.OS.Environment.ExternalStorageState);
 
 
+            /*
             if (ContextCompat.CheckSelfPermission(this, Manifest.Permission.WriteExternalStorage) == (int)Permission.Granted)
             {
                 // We have permission, go ahead and use the camera.
@@ -107,7 +108,7 @@ namespace EternityRadioApp.Droid
             {
                 ActivityCompat.RequestPermissions(this, new String[] { Manifest.Permission.WriteExternalStorage }, 1234);
 
-            }
+            }*/
 
             new LogService().Initialize(assembly, assemblyName, path, this);
         }
