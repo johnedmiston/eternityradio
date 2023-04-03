@@ -7,9 +7,10 @@
   <PropertyGroup>
     <AssemblyName>MediaManager</AssemblyName>
     <RootNamespace>MediaManager</RootNamespace>
-    <PackageId>Plugin.MediaManager</PackageId>
+    <PackageId>Plugin.MediaManager.EternityRadio</PackageId>
     <Description>Cross platform Xamarin plugin to play and control Audio and Video</Description>
     <DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <PropertyGroup Condition="$(TargetFramework.StartsWith('uap')) And '$(OS)' == 'Windows_NT'">
@@ -91,5 +92,9 @@
   <ItemGroup Condition=" $(TargetFramework.StartsWith('tizen')) ">
     <None Remove="Platforms\Tizen\**\*.cs" />
     <Compile Include="Platforms\Tizen\**\*.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Runtime" Version="4.3.1" />
   </ItemGroup>
 </Project>

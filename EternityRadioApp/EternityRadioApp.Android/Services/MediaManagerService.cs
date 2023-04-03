@@ -22,7 +22,7 @@ using Xamarin.Essentials;
 [assembly: Dependency(typeof(MediaManagerService_Android))]
 namespace EternityRadioApp.Droid.Services
 {
-    public class MediaManagerService_Android : IMediaManagerService
+    public class MediaManagerService_Android :IMediaManagerService
     {
 
 

@@ -43,6 +43,15 @@
     <None Remove="settings.xml" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="MediaManager.deps.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MediaManager.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MediaManager.Forms.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="Images\er.png" />
     <EmbeddedResource Include="settings.xml" />
     <EmbeddedResource Include="history.xml" />
@@ -66,6 +75,7 @@
     <PackageReference Include="AsyncAwaitBestPractices" Version="6.0.5" />
     <PackageReference Include="HtmlAgilityPack" Version="1.11.46" />
     <PackageReference Include="NLog" Version="5.0.4" />
+    <PackageReference Include="System.Runtime" Version="4.3.1" />
     <PackageReference Include="Xamanimation" Version="1.3.0" />
     <PackageReference Include="Xamarin.CommunityToolkit" Version="2.0.5" />
     <PackageReference Include="Xamarin.CommunityToolkit.Markup" Version="2.0.5" />
@@ -197,10 +207,15 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="NewFolder\" />
     <Folder Include="Settings\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MediaManager.Forms\MediaManager.Forms.csproj" />
-    <ProjectReference Include="..\MediaManager\MediaManager.csproj" />
+    <Reference Include="MediaManager">
+      <HintPath>MediaManager.dll</HintPath>
+    </Reference>
+    <Reference Include="MediaManager.Forms">
+      <HintPath>MediaManager.Forms.dll</HintPath>
+    </Reference>
   </ItemGroup>
 </Project>

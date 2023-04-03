@@ -1,0 +1,135 @@
+{
+  "runtimeTarget": {
+    "name": ".NETStandard,Version=v2.0/",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETStandard,Version=v2.0": {},
+    ".NETStandard,Version=v2.0/": {
+      "MediaManager/1.0.0": {
+        "dependencies": {
+          "AsyncFixer": "1.6.0",
+          "IDisposableAnalyzers": "4.0.2",
+          "Microsoft.SourceLink.GitHub": "1.1.1",
+          "NETStandard.Library": "2.0.3",
+          "Roslynator.Analyzers": "4.1.1",
+          "SourceLink.Create.CommandLine": "2.8.3",
+          "System.Runtime": "4.3.1"
+        },
+        "runtime": {
+          "MediaManager.dll": {}
+        }
+      },
+      "AsyncFixer/1.6.0": {},
+      "IDisposableAnalyzers/4.0.2": {},
+      "Microsoft.Build.Tasks.Git/1.1.1": {},
+      "Microsoft.NETCore.Platforms/1.1.1": {},
+      "Microsoft.NETCore.Targets/1.1.3": {},
+      "Microsoft.SourceLink.Common/1.1.1": {},
+      "Microsoft.SourceLink.GitHub/1.1.1": {
+        "dependencies": {
+          "Microsoft.Build.Tasks.Git": "1.1.1",
+          "Microsoft.SourceLink.Common": "1.1.1"
+        }
+      },
+      "NETStandard.Library/2.0.3": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.1"
+        }
+      },
+      "Roslynator.Analyzers/4.1.1": {},
+      "SourceLink.Create.CommandLine/2.8.3": {},
+      "System.Runtime/4.3.1": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.1",
+          "Microsoft.NETCore.Targets": "1.1.3"
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MediaManager/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AsyncFixer/1.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/Xfs9H3UMfEv64cwT+C/JrTRp4w08BmPuFbj0ageadCHpx6rxYJxAU2C6sEqRFG22xmGk5cX9ewzoiiehWVHOw==",
+      "path": "asyncfixer/1.6.0",
+      "hashPath": "asyncfixer.1.6.0.nupkg.sha512"
+    },
+    "IDisposableAnalyzers/4.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bmfujLOOEKcTULCu8XerA4V5p0WSNFfN4MXMUVMfyvhv0eDcqkdSKgf32nkSOeHQgoNzdDrSG2tTfxZchmRApQ==",
+      "path": "idisposableanalyzers/4.0.2",
+      "hashPath": "idisposableanalyzers.4.0.2.nupkg.sha512"
+    },
+    "Microsoft.Build.Tasks.Git/1.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-AT3HlgTjsqHnWpBHSNeR0KxbLZD7bztlZVj7I8vgeYG9SYqbeFGh0TM/KVtC6fg53nrWHl3VfZFvb5BiQFcY6Q==",
+      "path": "microsoft.build.tasks.git/1.1.1",
+      "hashPath": "microsoft.build.tasks.git.1.1.1.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Platforms/1.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TMBuzAHpTenGbGgk0SMTwyEkyijY/Eae4ZGsFNYJvAr/LDn1ku3Etp3FPxChmDp5HHF3kzJuoaa08N0xjqAJfQ==",
+      "path": "microsoft.netcore.platforms/1.1.1",
+      "hashPath": "microsoft.netcore.platforms.1.1.1.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Targets/1.1.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3Wrmi0kJDzClwAC+iBdUBpEKmEle8FQNsCs77fkiOIw/9oYA07bL1EZNX0kQ2OMN3xpwvl0vAtOCYY3ndDNlhQ==",
+      "path": "microsoft.netcore.targets/1.1.3",
+      "hashPath": "microsoft.netcore.targets.1.1.3.nupkg.sha512"
+    },
+    "Microsoft.SourceLink.Common/1.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WMcGpWKrmJmzrNeuaEb23bEMnbtR/vLmvZtkAP5qWu7vQsY59GqfRJd65sFpBszbd2k/bQ8cs8eWawQKAabkVg==",
+      "path": "microsoft.sourcelink.common/1.1.1",
+      "hashPath": "microsoft.sourcelink.common.1.1.1.nupkg.sha512"
+    },
+    "Microsoft.SourceLink.GitHub/1.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IaJGnOv/M7UQjRJks7B6p7pbPnOwisYGOIzqCz5ilGFTApZ3ktOR+6zJ12ZRPInulBmdAf1SrGdDG2MU8g6XTw==",
+      "path": "microsoft.sourcelink.github/1.1.1",
+      "hashPath": "microsoft.sourcelink.github.1.1.1.nupkg.sha512"
+    },
+    "NETStandard.Library/2.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-548M6mnBSJWxsIlkQHfbzoYxpiYFXZZSL00p4GHYv8PkiqFBnnT68mW5mGEsA/ch9fDO9GkPgkFQpWiXZN7mAQ==",
+      "path": "netstandard.library/2.0.3",
+      "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    },
+    "Roslynator.Analyzers/4.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3cPVlrB1PytlO1ztZZBOExDKQWpMZgI15ZDa0BqLu0l6xv+xIRfEpqjNRcpvUy3aLxWTkPgSKZbbaO+VoFEJ1g==",
+      "path": "roslynator.analyzers/4.1.1",
+      "hashPath": "roslynator.analyzers.4.1.1.nupkg.sha512"
+    },
+    "SourceLink.Create.CommandLine/2.8.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IG9yWuEwkGDC94Be8U7XC/YwzGPGUhH7cF2/AzN3DeyJwo9Epp0kiwT8UGNg1lNkH1mXyjOTS7oN0DZSqMmoBQ==",
+      "path": "sourcelink.create.commandline/2.8.3",
+      "hashPath": "sourcelink.create.commandline.2.8.3.nupkg.sha512"
+    },
+    "System.Runtime/4.3.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-abhfv1dTK6NXOmu4bgHIONxHyEqFjW8HwXPmpY9gmll+ix9UNo4XDcmzJn6oLooftxNssVHdJC1pGT9jkSynQg==",
+      "path": "system.runtime/4.3.1",
+      "hashPath": "system.runtime.4.3.1.nupkg.sha512"
+    }
+  }
+}
