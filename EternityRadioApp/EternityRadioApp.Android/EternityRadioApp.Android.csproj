@@ -60,7 +60,7 @@
     <AndroidKeyStore>false</AndroidKeyStore>
     <AndroidSigningKeyStore>C:\Users\tomjo\AppData\Local\Xamarin\Mono for Android\Keystore\Thomas Jolin\Thomas Jolin.keystore</AndroidSigningKeyStore>
     <AndroidSigningStorePass>Xfce6024!</AndroidSigningStorePass>
-    <AndroidPackageFormat>apk</AndroidPackageFormat>
+    <AndroidPackageFormat>aab</AndroidPackageFormat>
   </PropertyGroup>
   <PropertyGroup Label="MultilingualAppToolkit">
     <MultilingualAppToolkitVersion>4.0</MultilingualAppToolkitVersion>
