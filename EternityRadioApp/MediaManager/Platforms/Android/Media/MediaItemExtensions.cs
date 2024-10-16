@@ -1,4 +1,5 @@
 ﻿using Android.Graphics;
+using Android.Media;
 using Android.OS;
 using Android.Support.V4.Media;
 using Com.Google.Android.Exoplayer2.Source;
@@ -8,6 +9,7 @@ using Com.Google.Android.Exoplayer2.Source.Smoothstreaming;
 using Com.Google.Android.Exoplayer2.Upstream;
 using MediaManager.Library;
 using MediaManager.Platforms.Android.Player;
+using DownloadStatus = MediaManager.Library.DownloadStatus;
 
 namespace MediaManager.Platforms.Android.Media
 {
@@ -24,8 +26,7 @@ namespace MediaManager.Platforms.Android.Media
 
             var factory = CreateDataSourceFactory(mediaItem);
             return new ProgressiveMediaSource.Factory(factory)
-                .SetTag(mediaDescription)
-                .CreateMediaSource(global::Android.Net.Uri.Empty);
+                .CreateMediaSource(BuildMediaItem(mediaDescription));
         }
 
         public static ClippingMediaSource ToClippingMediaSource(this IMediaItem mediaItem, TimeSpan stopAt)
@@ -50,45 +51,38 @@ namespace MediaManager.Platforms.Android.Media
             if (MediaManager.AndroidMediaPlayer.DataSourceFactory == null)
                 throw new ArgumentNullException(nameof(AndroidMediaPlayer.DataSourceFactory));
 
-            IMediaSource mediaSource;
-            var mediaUri = mediaDescription.MediaUri;
-
             switch (mediaType)
             {
                 case MediaType.Audio:
                 case MediaType.Video:
                 case MediaType.Default:
-                    mediaSource = new ProgressiveMediaSource.Factory(MediaManager.AndroidMediaPlayer.DataSourceFactory)
-                        .SetTag(mediaDescription)
-                        .CreateMediaSource(mediaUri);
-                    break;
+                    return new ProgressiveMediaSource.Factory(MediaManager.AndroidMediaPlayer.DataSourceFactory).CreateMediaSource(BuildMediaItem(mediaDescription));
                 case MediaType.Dash:
                     if (MediaManager.AndroidMediaPlayer.DashChunkSourceFactory == null)
                         throw new ArgumentNullException(nameof(AndroidMediaPlayer.DashChunkSourceFactory));
 
-                    mediaSource = new DashMediaSource.Factory(MediaManager.AndroidMediaPlayer.DashChunkSourceFactory, MediaManager.AndroidMediaPlayer.DataSourceFactory)
-                        .SetTag(mediaDescription)
-                        .CreateMediaSource(mediaUri);
-                    break;
+                    return new DashMediaSource.Factory(MediaManager.AndroidMediaPlayer.DashChunkSourceFactory, MediaManager.AndroidMediaPlayer.DataSourceFactory)
+                        .CreateMediaSource(BuildMediaItem(mediaDescription));
                 case MediaType.Hls:
-                    mediaSource = new HlsMediaSource.Factory(MediaManager.AndroidMediaPlayer.DataSourceFactory)
+                    return new HlsMediaSource.Factory(MediaManager.AndroidMediaPlayer.DataSourceFactory)
                         .SetAllowChunklessPreparation(true)
-                        .SetTag(mediaDescription)
-                        .CreateMediaSource(mediaUri);
-                    break;
+                        .CreateMediaSource(BuildMediaItem(mediaDescription));
                 case MediaType.SmoothStreaming:
                     if (MediaManager.AndroidMediaPlayer.SsChunkSourceFactory == null)
                         throw new ArgumentNullException(nameof(AndroidMediaPlayer.SsChunkSourceFactory));
 
-                    mediaSource = new SsMediaSource.Factory(MediaManager.AndroidMediaPlayer.SsChunkSourceFactory, MediaManager.AndroidMediaPlayer.DataSourceFactory)
-                        .SetTag(mediaDescription)
-                        .CreateMediaSource(mediaUri);
-                    break;
+                    return new SsMediaSource.Factory(MediaManager.AndroidMediaPlayer.SsChunkSourceFactory, MediaManager.AndroidMediaPlayer.DataSourceFactory)
+                        .CreateMediaSource(BuildMediaItem(mediaDescription));
                 default:
                     throw new ArgumentNullException(nameof(mediaType));
             }
+        }
 
-            return mediaSource;
+        public static Com.Google.Android.Exoplayer2.MediaItem BuildMediaItem(this MediaDescriptionCompat mediaDescription)
+        {
+            return new Com.Google.Android.Exoplayer2.MediaItem.Builder()
+                        .SetTag(mediaDescription)
+                        .SetUri(mediaDescription.MediaUri).Build();
         }
 
         public static MediaDescriptionCompat ToMediaDescription(this IMediaItem item)
@@ -103,11 +97,12 @@ namespace MediaManager.Platforms.Android.Media
 
             //It should be better to only set the uri to prevent loading images into memory
             if (!string.IsNullOrEmpty(item?.DisplayImageUri))
+            {
                 description.SetIconUri(global::Android.Net.Uri.Parse(item?.DisplayImageUri));
+            }
             else
             {
-                var image = item?.DisplayImage as Bitmap;
-                if (image != null)
+                if (item?.DisplayImage is Bitmap image)
                     description.SetIconBitmap(image);
             }
 
@@ -121,39 +116,41 @@ namespace MediaManager.Platforms.Android.Media
 
         public static IMediaItem ToMediaItem(this MediaDescriptionCompat mediaDescription)
         {
-            var item = new MediaItem(mediaDescription.MediaUri.ToString());
-            //item.Advertisement = mediaDescription.
-            //item.Album = mediaDescription.
-            //item.AlbumArt = mediaDescription.
-            //item.AlbumArtist = mediaDescription.
-            //item.AlbumArtUri = mediaDescription.
-            //item.Art = mediaDescription.
-            //item.Artist = mediaDescription.
-            //item.ArtUri = mediaDescription.
-            //item.Author = mediaDescription.
-            //item.Compilation = mediaDescription.
-            //item.Composer = mediaDescription.
-            //item.Date = mediaDescription.
-            //item.DiscNumber = mediaDescription.
-            //item.DisplayDescription = mediaDescription.
-            item.DisplayImage = mediaDescription.IconBitmap;
-            item.DisplayImageUri = mediaDescription.IconUri.ToString();
-            item.DisplaySubtitle = mediaDescription.Subtitle;
-            item.DisplayTitle = mediaDescription.Title;
-            //item.DownloadStatus = mediaDescription.
-            //item.Duration = mediaDescription.
-            item.Extras = mediaDescription.Extras;
-            //item.Genre = mediaDescription.
-            item.Id = mediaDescription.MediaId;
-            //item.MediaUri = mediaDescription.MediaUri.ToString();
-            //item.NumTracks = mediaDescription.
-            //item.Rating = mediaDescription.
-            item.Title = mediaDescription.Title;
-            //item.TrackNumber = mediaDescription.
-            //item.UserRating = mediaDescription.
-            //item.Writer = mediaDescription.
-            //item.Year = mediaDescription.
-            item.IsMetadataExtracted = true;
+            var item = new MediaItem(mediaDescription.MediaUri.ToString())
+            {
+                //item.Advertisement = mediaDescription.
+                //item.Album = mediaDescription.
+                //item.AlbumArt = mediaDescription.
+                //item.AlbumArtist = mediaDescription.
+                //item.AlbumArtUri = mediaDescription.
+                //item.Art = mediaDescription.
+                //item.Artist = mediaDescription.
+                //item.ArtUri = mediaDescription.
+                //item.Author = mediaDescription.
+                //item.Compilation = mediaDescription.
+                //item.Composer = mediaDescription.
+                //item.Date = mediaDescription.
+                //item.DiscNumber = mediaDescription.
+                //item.DisplayDescription = mediaDescription.
+                DisplayImage = mediaDescription.IconBitmap,
+                DisplayImageUri = mediaDescription.IconUri.ToString(),
+                DisplaySubtitle = mediaDescription.Subtitle,
+                DisplayTitle = mediaDescription.Title,
+                //item.DownloadStatus = mediaDescription.
+                //item.Duration = mediaDescription.
+                Extras = mediaDescription.Extras,
+                //item.Genre = mediaDescription.
+                Id = mediaDescription.MediaId,
+                //item.MediaUri = mediaDescription.MediaUri.ToString();
+                //item.NumTracks = mediaDescription.
+                //item.Rating = mediaDescription.
+                Title = mediaDescription.Title,
+                //item.TrackNumber = mediaDescription.
+                //item.UserRating = mediaDescription.
+                //item.Writer = mediaDescription.
+                //item.Year = mediaDescription.
+                IsMetadataExtracted = true
+            };
             return item;
         }
 
@@ -214,8 +211,9 @@ namespace MediaManager.Platforms.Android.Media
 
             mediaItem.Data.CopyTo(memStream);
             var bytes = memStream.ToArray();
-            var factory = new ByteArrayDataSourceFactory(bytes);
-            return factory;
+            //TODO: Fix
+            //var factory = new ByteArrayDataSourceFactory(bytes);
+            return null;
         }
     }
 }

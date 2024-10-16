@@ -10,7 +10,6 @@ namespace MediaManager.Platforms.Android.Notifications
 
         public NotificationManager()
         {
-
         }
 
         public PlayerNotificationManager PlayerNotificationManager { get; set; }
@@ -18,10 +17,7 @@ namespace MediaManager.Platforms.Android.Notifications
         private IPlayer _player;
         internal IPlayer Player
         {
-            get
-            {
-                return _player;
-            }
+            get => _player;
             set
             {
                 _player = value;
@@ -58,7 +54,7 @@ namespace MediaManager.Platforms.Android.Notifications
             set
             {
                 base.ShowNavigationControls = value;
-                PlayerNotificationManager?.SetUseNavigationActions(ShowNavigationControls);
+               // PlayerNotificationManager?.SetUseNavigationActions(ShowNavigationControls);
             }
         }
 
@@ -72,11 +68,11 @@ namespace MediaManager.Platforms.Android.Notifications
 
                 if (ShowNavigationControls && MediaManager.Queue.Count > 1)
                 {
-                    PlayerNotificationManager.SetUseNavigationActions(true);
+                    //PlayerNotificationManager.SetUseNavigationActions(true);
                 }
                 else
                 {
-                    PlayerNotificationManager.SetUseNavigationActions(false);
+                    //PlayerNotificationManager.SetUseNavigationActions(false);
                 }
                 PlayerNotificationManager.Invalidate();
             }

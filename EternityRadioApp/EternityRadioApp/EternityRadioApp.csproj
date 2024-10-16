@@ -1,221 +1,221 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup Label="MultilingualAppToolkit">
-    <MultilingualAppToolkitVersion>4.0</MultilingualAppToolkitVersion>
-    <MultilingualFallbackLanguage>en-US</MultilingualFallbackLanguage>
-    <TranslationReport Condition="'$(Configuration)' == 'Release'">true</TranslationReport>
-    <SuppressPseudoWarning Condition="'$(Configuration)' == 'Debug'">true</SuppressPseudoWarning>
-    <AndroidDexTool>d8</AndroidDexTool>
+	<PropertyGroup Label="MultilingualAppToolkit">
+		<MultilingualAppToolkitVersion>4.0</MultilingualAppToolkitVersion>
+		<MultilingualFallbackLanguage>en-US</MultilingualFallbackLanguage>
+		<TranslationReport Condition="'$(Configuration)' == 'Release'">true</TranslationReport>
+		<SuppressPseudoWarning Condition="'$(Configuration)' == 'Debug'">true</SuppressPseudoWarning>
+		<AndroidDexTool>d8</AndroidDexTool>
 
-  </PropertyGroup>
-  <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
-    <NeutralLanguage>en-US</NeutralLanguage>
-    <UserSecretsId>48fc93e1-401b-4a8d-93b7-bb80db6b1825</UserSecretsId>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DebugType>portable</DebugType>
-    <DebugSymbols>true</DebugSymbols>
-  </PropertyGroup>
-  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Multilingual App Toolkit\Microsoft.Multilingual.ResxResources.targets" Label="MultilingualAppToolkit" Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\Multilingual App Toolkit\v$(MultilingualAppToolkitVersion)\Microsoft.Multilingual.ResxResources.targets')" />
-  <Target Name="MATPrerequisite" BeforeTargets="PrepareForBuild" Condition="!Exists('$(MSBuildExtensionsPath)\Microsoft\Multilingual App Toolkit\Microsoft.Multilingual.ResxResources.targets')" Label="MultilingualAppToolkit">
-    <Warning Text="$(MSBuildProjectFile) is Multilingual build enabled, but the Multilingual App Toolkit is unavailable during the build. If building with Visual Studio, please check to ensure that toolkit is properly installed." />
-  </Target>
-  <ItemGroup>
-    <None Remove="eternitycontent.xml" />
-    <None Remove="history.xml" />
-    <None Remove="Images\Downloads.jpg" />
-    <None Remove="Images\EnglishRadio.jpg" />
-    <None Remove="Images\er.png" />
-    <None Remove="Images\HarvestTime.png" />
-    <None Remove="Images\Insights.jpg" />
-    <None Remove="Images\ISOM.jpg" />
-    <None Remove="Images\loader.gif" />
-    <None Remove="Images\microphone.png" />
-    <None Remove="Images\OneAnother.jpg" />
-    <None Remove="Images\SpiritualDiscernment.jpg" />
-    <None Remove="Images\splash_logo.png" />
-    <None Remove="Images\UpliftingMoments.jpg" />
-    <None Remove="Resources\Fonts\fa-regular-400.ttf" />
-    <None Remove="Resources\Fonts\fa-solid-900.ttf" />
-    <None Remove="Resources\Fonts\FabMDL2.ttf" />
-    <None Remove="settings.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="MediaManager.deps.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MediaManager.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MediaManager.Forms.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Images\er.png" />
-    <EmbeddedResource Include="settings.xml" />
-    <EmbeddedResource Include="history.xml" />
-    <EmbeddedResource Include="Images\Downloads.jpg" />
-    <EmbeddedResource Include="Images\EnglishRadio.jpg" />
-    <EmbeddedResource Include="Images\HarvestTime.png" />
-    <EmbeddedResource Include="Images\Insights.jpg" />
-    <EmbeddedResource Include="Images\ISOM.jpg" />
-    <EmbeddedResource Include="Images\loader.gif" />
-    <EmbeddedResource Include="Images\microphone.png" />
-    <EmbeddedResource Include="Images\OneAnother.jpg" />
-    <EmbeddedResource Include="Images\SpiritualDiscernment.jpg" />
-    <EmbeddedResource Include="Images\splash_logo.png" />
-    <EmbeddedResource Include="Images\UpliftingMoments.jpg" />
-    <EmbeddedResource Include="eternitycontent.xml" />
-    <EmbeddedResource Include="Resources\Fonts\fa-regular-400.ttf" />
-    <EmbeddedResource Include="Resources\Fonts\fa-solid-900.ttf" />
-    <EmbeddedResource Include="Resources\Fonts\FabMDL2.ttf" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="AsyncAwaitBestPractices" Version="6.0.5" />
-    <PackageReference Include="HtmlAgilityPack" Version="1.11.46" />
-    <PackageReference Include="NLog" Version="5.0.4" />
-    <PackageReference Include="System.Runtime" Version="4.3.1" />
-    <PackageReference Include="Xamanimation" Version="1.3.0" />
-    <PackageReference Include="Xamarin.CommunityToolkit" Version="2.0.5" />
-    <PackageReference Include="Xamarin.CommunityToolkit.Markup" Version="2.0.5" />
-    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2515" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.7.3" />
-    <PackageReference Include="Xamarin.Forms.DualScreen" Version="5.0.0.2515" />
-    <PackageReference Include="Xamarin.Forms.Maps" Version="5.0.0.2515" />
-    <PackageReference Include="Xamarin.Forms.PancakeView" Version="2.3.0.759" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Update="LandingPage.xaml.cs">
-      <DependentUpon>LandingPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Update="PdfJsPage.xaml.cs">
-      <DependentUpon>PdfJsPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Update="DownloadCategoryPage.xaml.cs">
-      <DependentUpon>DownloadCategoryPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Update="DownloadSeriesPage.xaml.cs">
-      <DependentUpon>DownloadSeriesPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Update="MainPage.xaml.cs">
-      <DependentUpon>MainPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Update="StreamPlayerPage.xaml.cs">
-      <DependentUpon>StreamPlayerPage.xaml</DependentUpon>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Update="AppShell.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Content\Common\FlyoutFooterTemplate.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Content\Common\FlyoutHeaderTemplate.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Content\Common\FlyoutItemTemplate.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Content\ControlGallery\ControlPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Content\ControlGallery\ControlTemplates\ButtonControlTemplate.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Content\ControlGallery\ControlTemplates\StackLayoutControlTemplate.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Content\ControlGallery\ProppyControls\ColorPicker.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Content\ControlGallery\ProppyControls\MarginProperty.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Content\ControlGallery\ProppyControls\PaddingProperty.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Content\ControlGallery\ProppyControls\SingleSmallNumberProperty.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Content\ControlGallery\ProppyControls\TextEntry.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Content\ControlGallery\ProppyControls\Toolbar.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Content\ControlGallery\IndexPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Content\ControlGallery\ViewSourcePage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Content\Scenarios\IndexPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="PdfJsPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="DownloadPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="DownloadPlayerPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="DownloadSeriesPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="EmptyCell.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="FlyoutPage1Flyout.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="MessageCell.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="MessagePage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Content\Settings\SettingsPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Content\Settings\StyleGuidePage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Content\Settings\ThemeCardView.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="StreamPlayerPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="StreamPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Styles\DefaultTheme.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Styles\Global.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Styles\Icons.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Styles\Sizes.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="NewFolder\" />
-    <Folder Include="Settings\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="MediaManager">
-      <HintPath>MediaManager.dll</HintPath>
-    </Reference>
-    <Reference Include="MediaManager.Forms">
-      <HintPath>MediaManager.Forms.dll</HintPath>
-    </Reference>
-  </ItemGroup>
+	</PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+		<NeutralLanguage>en-US</NeutralLanguage>
+		<UserSecretsId>48fc93e1-401b-4a8d-93b7-bb80db6b1825</UserSecretsId>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<DebugType>portable</DebugType>
+		<DebugSymbols>true</DebugSymbols>
+	</PropertyGroup>
+	<Import Project="$(MSBuildExtensionsPath)\Microsoft\Multilingual App Toolkit\Microsoft.Multilingual.ResxResources.targets" Label="MultilingualAppToolkit" Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\Multilingual App Toolkit\v$(MultilingualAppToolkitVersion)\Microsoft.Multilingual.ResxResources.targets')" />
+	<Target Name="MATPrerequisite" BeforeTargets="PrepareForBuild" Condition="!Exists('$(MSBuildExtensionsPath)\Microsoft\Multilingual App Toolkit\Microsoft.Multilingual.ResxResources.targets')" Label="MultilingualAppToolkit">
+		<Warning Text="$(MSBuildProjectFile) is Multilingual build enabled, but the Multilingual App Toolkit is unavailable during the build. If building with Visual Studio, please check to ensure that toolkit is properly installed." />
+	</Target>
+	<ItemGroup>
+		<None Remove="eternitycontent.xml" />
+		<None Remove="history.xml" />
+		<None Remove="Images\Downloads.jpg" />
+		<None Remove="Images\EnglishRadio.jpg" />
+		<None Remove="Images\er.png" />
+		<None Remove="Images\HarvestTime.png" />
+		<None Remove="Images\Insights.jpg" />
+		<None Remove="Images\ISOM.jpg" />
+		<None Remove="Images\loader.gif" />
+		<None Remove="Images\microphone.png" />
+		<None Remove="Images\OneAnother.jpg" />
+		<None Remove="Images\SpiritualDiscernment.jpg" />
+		<None Remove="Images\splash_logo.png" />
+		<None Remove="Images\UpliftingMoments.jpg" />
+		<None Remove="Resources\Fonts\fa-regular-400.ttf" />
+		<None Remove="Resources\Fonts\fa-solid-900.ttf" />
+		<None Remove="Resources\Fonts\FabMDL2.ttf" />
+		<None Remove="settings.xml" />
+	</ItemGroup>
+	<ItemGroup>
+		<EmbeddedResource Include="MediaManager.deps.json">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="MediaManager.dll">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="MediaManager.Forms.dll">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</EmbeddedResource>
+		<EmbeddedResource Include="Images\er.png" />
+		<EmbeddedResource Include="settings.xml" />
+		<EmbeddedResource Include="history.xml" />
+		<EmbeddedResource Include="Images\Downloads.jpg" />
+		<EmbeddedResource Include="Images\EnglishRadio.jpg" />
+		<EmbeddedResource Include="Images\HarvestTime.png" />
+		<EmbeddedResource Include="Images\Insights.jpg" />
+		<EmbeddedResource Include="Images\ISOM.jpg" />
+		<EmbeddedResource Include="Images\loader.gif" />
+		<EmbeddedResource Include="Images\microphone.png" />
+		<EmbeddedResource Include="Images\OneAnother.jpg" />
+		<EmbeddedResource Include="Images\SpiritualDiscernment.jpg" />
+		<EmbeddedResource Include="Images\splash_logo.png" />
+		<EmbeddedResource Include="Images\UpliftingMoments.jpg" />
+		<EmbeddedResource Include="eternitycontent.xml" />
+		<EmbeddedResource Include="Resources\Fonts\fa-regular-400.ttf" />
+		<EmbeddedResource Include="Resources\Fonts\fa-solid-900.ttf" />
+		<EmbeddedResource Include="Resources\Fonts\FabMDL2.ttf" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="AsyncAwaitBestPractices" Version="6.0.5" />
+		<PackageReference Include="HtmlAgilityPack" Version="1.11.46" />
+		<PackageReference Include="NLog" Version="5.0.4" />
+		<PackageReference Include="System.Runtime" Version="4.3.1" />
+		<PackageReference Include="Xamanimation" Version="1.3.0" />
+		<PackageReference Include="Xamarin.CommunityToolkit" Version="2.0.5" />
+		<PackageReference Include="Xamarin.CommunityToolkit.Markup" Version="2.0.5" />
+		<PackageReference Include="Xamarin.Forms" Version="5.0.0.2662" />
+		<PackageReference Include="Xamarin.Essentials" Version="1.8.1" />
+		<PackageReference Include="Xamarin.Forms.DualScreen" Version="5.0.0.2515" />
+		<PackageReference Include="Xamarin.Forms.Maps" Version="5.0.0.2515" />
+		<PackageReference Include="Xamarin.Forms.PancakeView" Version="2.3.0.759" />
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Update="LandingPage.xaml.cs">
+			<DependentUpon>LandingPage.xaml</DependentUpon>
+		</Compile>
+		<Compile Update="PdfJsPage.xaml.cs">
+			<DependentUpon>PdfJsPage.xaml</DependentUpon>
+		</Compile>
+		<Compile Update="DownloadCategoryPage.xaml.cs">
+			<DependentUpon>DownloadCategoryPage.xaml</DependentUpon>
+		</Compile>
+		<Compile Update="DownloadSeriesPage.xaml.cs">
+			<DependentUpon>DownloadSeriesPage.xaml</DependentUpon>
+		</Compile>
+		<Compile Update="MainPage.xaml.cs">
+			<DependentUpon>MainPage.xaml</DependentUpon>
+		</Compile>
+		<Compile Update="StreamPlayerPage.xaml.cs">
+			<DependentUpon>StreamPlayerPage.xaml</DependentUpon>
+		</Compile>
+	</ItemGroup>
+	<ItemGroup>
+		<EmbeddedResource Update="AppShell.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</EmbeddedResource>
+		<EmbeddedResource Update="Content\Common\FlyoutFooterTemplate.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</EmbeddedResource>
+		<EmbeddedResource Update="Content\Common\FlyoutHeaderTemplate.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</EmbeddedResource>
+		<EmbeddedResource Update="Content\Common\FlyoutItemTemplate.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</EmbeddedResource>
+		<EmbeddedResource Update="Content\ControlGallery\ControlPage.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</EmbeddedResource>
+		<EmbeddedResource Update="Content\ControlGallery\ControlTemplates\ButtonControlTemplate.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</EmbeddedResource>
+		<EmbeddedResource Update="Content\ControlGallery\ControlTemplates\StackLayoutControlTemplate.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</EmbeddedResource>
+		<EmbeddedResource Update="Content\ControlGallery\ProppyControls\ColorPicker.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</EmbeddedResource>
+		<EmbeddedResource Update="Content\ControlGallery\ProppyControls\MarginProperty.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</EmbeddedResource>
+		<EmbeddedResource Update="Content\ControlGallery\ProppyControls\PaddingProperty.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</EmbeddedResource>
+		<EmbeddedResource Update="Content\ControlGallery\ProppyControls\SingleSmallNumberProperty.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</EmbeddedResource>
+		<EmbeddedResource Update="Content\ControlGallery\ProppyControls\TextEntry.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</EmbeddedResource>
+		<EmbeddedResource Update="Content\ControlGallery\ProppyControls\Toolbar.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</EmbeddedResource>
+		<EmbeddedResource Update="Content\ControlGallery\IndexPage.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</EmbeddedResource>
+		<EmbeddedResource Update="Content\ControlGallery\ViewSourcePage.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</EmbeddedResource>
+		<EmbeddedResource Update="Content\Scenarios\IndexPage.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</EmbeddedResource>
+		<EmbeddedResource Update="PdfJsPage.xaml">
+			<Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+		</EmbeddedResource>
+		<EmbeddedResource Update="DownloadPage.xaml">
+			<Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+		</EmbeddedResource>
+		<EmbeddedResource Update="DownloadPlayerPage.xaml">
+			<Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+		</EmbeddedResource>
+		<EmbeddedResource Update="DownloadSeriesPage.xaml">
+			<Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+		</EmbeddedResource>
+		<EmbeddedResource Update="EmptyCell.xaml">
+			<Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+		</EmbeddedResource>
+		<EmbeddedResource Update="FlyoutPage1Flyout.xaml">
+			<Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+		</EmbeddedResource>
+		<EmbeddedResource Update="MessageCell.xaml">
+			<Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+		</EmbeddedResource>
+		<EmbeddedResource Update="MessagePage.xaml">
+			<Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+		</EmbeddedResource>
+		<EmbeddedResource Update="Content\Settings\SettingsPage.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</EmbeddedResource>
+		<EmbeddedResource Update="Content\Settings\StyleGuidePage.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</EmbeddedResource>
+		<EmbeddedResource Update="Content\Settings\ThemeCardView.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</EmbeddedResource>
+		<EmbeddedResource Update="StreamPlayerPage.xaml">
+			<Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+		</EmbeddedResource>
+		<EmbeddedResource Update="StreamPage.xaml">
+			<Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+		</EmbeddedResource>
+		<EmbeddedResource Update="Styles\DefaultTheme.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</EmbeddedResource>
+		<EmbeddedResource Update="Styles\Global.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</EmbeddedResource>
+		<EmbeddedResource Update="Styles\Icons.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</EmbeddedResource>
+		<EmbeddedResource Update="Styles\Sizes.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</EmbeddedResource>
+	</ItemGroup>
+	<ItemGroup>
+		<Folder Include="NewFolder\" />
+		<Folder Include="Settings\" />
+	</ItemGroup>
+	<ItemGroup>
+		<Reference Include="MediaManager.Forms">
+			<HintPath>MediaManager.Forms.dll</HintPath>
+		</Reference>
+		<Reference Include="MediaManager">
+			<HintPath>MediaManager.dll</HintPath>
+		</Reference>
+	</ItemGroup>
 </Project>

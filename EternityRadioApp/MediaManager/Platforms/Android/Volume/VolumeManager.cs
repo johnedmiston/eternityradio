@@ -12,7 +12,7 @@ namespace MediaManager.Platforms.Android.Volume
         {
         }
 
-        public override event VolumeChangedEventHandler VolumeChanged;
+        public override event EventHandler<VolumeChangedEventArgs> VolumeChanged;
 
         public override int CurrentVolume
         {
@@ -49,7 +49,9 @@ namespace MediaManager.Platforms.Android.Volume
                     CurrentVolume = 0;
                 }
                 else
+                {
                     CurrentVolume = preMutedVolume;
+                }
 
                 VolumeChanged?.Invoke(this, new VolumeChangedEventArgs(CurrentVolume, Muted));
             }

@@ -19,18 +19,19 @@ using MediaManager.Platforms.Android.Queue;
 using MediaManager.Platforms.Android.Video;
 using MediaManager.Player;
 using MediaManager.Video;
+using VideoView = MediaManager.Platforms.Android.Video.VideoView;
 
 namespace MediaManager.Platforms.Android.Player
 {
     public class AndroidMediaPlayer : MediaPlayerBase, IMediaPlayer<SimpleExoPlayer, VideoView>
     {
         protected MediaManagerImplementation MediaManager => CrossMediaManager.Android;
-        protected Dictionary<string, string> RequestHeaders => MediaManager.RequestHeaders;
+        protected IDictionary<string, string> RequestHeaders => MediaManager.RequestHeaders;
         protected Context Context => MediaManager.Context;
         protected MediaSessionCompat MediaSession => MediaManager.MediaSession;
 
         protected string UserAgent { get; set; }
-        protected DefaultHttpDataSourceFactory HttpDataSourceFactory { get; set; }
+        protected DefaultHttpDataSource.Factory HttpDataSourceFactory { get; set; }
         public IDataSource.IFactory DataSourceFactory { get; set; }
         public DefaultDashChunkSource.Factory DashChunkSourceFactory { get; set; }
         public DefaultSsChunkSource.Factory SsChunkSourceFactory { get; set; }
@@ -89,21 +90,13 @@ namespace MediaManager.Platforms.Android.Player
             if (PlayerView == null)
                 return;
 
-            switch (videoAspectMode)
+            PlayerView.ResizeMode = videoAspectMode switch
             {
-                case VideoAspectMode.None:
-                    PlayerView.ResizeMode = AspectRatioFrameLayout.ResizeModeZoom;
-                    break;
-                case VideoAspectMode.AspectFit:
-                    PlayerView.ResizeMode = AspectRatioFrameLayout.ResizeModeFit;
-                    break;
-                case VideoAspectMode.AspectFill:
-                    PlayerView.ResizeMode = AspectRatioFrameLayout.ResizeModeFill;
-                    break;
-                default:
-                    PlayerView.ResizeMode = AspectRatioFrameLayout.ResizeModeZoom;
-                    break;
-            }
+                VideoAspectMode.None => AspectRatioFrameLayout.ResizeModeZoom,
+                VideoAspectMode.AspectFit => AspectRatioFrameLayout.ResizeModeFit,
+                VideoAspectMode.AspectFill => AspectRatioFrameLayout.ResizeModeFill,
+                _ => AspectRatioFrameLayout.ResizeModeZoom,
+            };
         }
 
         public override void UpdateShowPlaybackControls(bool showPlaybackControls)
@@ -130,7 +123,9 @@ namespace MediaManager.Platforms.Android.Player
                 PlayerView.DefaultArtwork = new BitmapDrawable(Context.Resources, bmp);
             }
             else
+            {
                 PlayerView.UseArtwork = false;
+            }
         }
 
         public override void UpdateIsFullWindow(bool isFullWindow)
@@ -154,7 +149,7 @@ namespace MediaManager.Platforms.Android.Player
             else
                 UserAgent = Util.GetUserAgent(Context, Context.PackageName);
 
-            HttpDataSourceFactory = new DefaultHttpDataSourceFactory(UserAgent);
+            HttpDataSourceFactory = new DefaultHttpDataSource.Factory().SetUserAgent(UserAgent).SetAllowCrossProtocolRedirects(true);
             UpdateRequestHeaders();
 
             MediaSource = new ConcatenatingMediaSource();
@@ -177,18 +172,11 @@ namespace MediaManager.Platforms.Android.Player
 
             PlayerEventListener = new PlayerEventListener()
             {
-                OnPlayerErrorImpl = (ExoPlaybackException exception) =>
+                OnPlayerErrorImpl = (PlaybackException exception) =>
                 {
-                    switch (exception.Type)
-                    {
-                        case ExoPlaybackException.TypeRenderer:
-                        case ExoPlaybackException.TypeSource:
-                        case ExoPlaybackException.TypeUnexpected:
-                            break;
-                    }
                     MediaManager.OnMediaItemFailed(this, new MediaItemFailedEventArgs(MediaManager.Queue.Current, exception, exception.Message));
                 },
-                OnTracksChangedImpl = (trackGroups, trackSelections) =>
+                OnTracksChangedImpl = (tracks) =>
                 {
                     InvokeBeforePlaying(this, new MediaPlayerEventArgs(MediaManager.Queue.Current, this));
 
@@ -242,10 +230,6 @@ namespace MediaManager.Platforms.Android.Player
                 OnIsPlayingChangedImpl = (bool isPlaying) =>
                 {
                     //TODO: Maybe call playing changed event
-                },
-                OnPlaybackSuppressionReasonChangedImpl = (int playbackSuppressionReason) =>
-                {
-                    //TODO: Maybe call event
                 }
             };
             Player.AddListener(PlayerEventListener);
@@ -268,17 +252,14 @@ namespace MediaManager.Platforms.Android.Player
         {
             if (RequestHeaders?.Count > 0)
             {
-                foreach (var item in RequestHeaders)
-                {
-                    HttpDataSourceFactory?.DefaultRequestProperties.Set(item.Key, item.Value);
-                }
+                HttpDataSourceFactory?.SetDefaultRequestProperties(RequestHeaders);
             }
         }
 
         public virtual void ConnectMediaSession()
         {
             if (MediaSession == null)
-                throw new ArgumentNullException(nameof(MediaSession), $"{nameof(MediaSession)} cannot be null. Make sure the {nameof(MediaBrowserService)} sets it up");
+                throw new ArgumentNullException(nameof(MediaSession), $"{nameof(MediaSession)} cannot be null. Make sure the {nameof(MediaBrowserManager.ServiceType)} sets it up");
 
             MediaSessionConnector = new MediaSessionConnector(MediaSession);
 
